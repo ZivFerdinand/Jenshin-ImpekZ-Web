@@ -387,6 +387,7 @@ nav > .nav-right-area > .login-btn{
     
     .upper-right-area{
         display: none;
+        /* overflow-x: scroll; */
     }
 
     .upper-left-area > img{

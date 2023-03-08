@@ -1,0 +1,153 @@
+.mainBG{
+    /* margin-left: calc(5vw + 20px); */
+    color:#FFFFFF;
+    height: 100vh;
+    background: url('Images/mainBG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainTitle{
+    font-size: 49px;
+    font-family: 'HyWenHei';
+    text-shadow: 0px 4px 20px #000000;
+}
+.left-navigation{
+    position: fixed;
+    margin-top: 100px;
+    height: calc(100vh - 120px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* z-index: 1000; */
+}
+
+.logo{
+    height: calc((100vh - 120px)/7);
+    /* border: solid white; */
+    /* background-color: green; */
+    padding: 28px 0 2px 0;
+    margin: auto auto auto auto;
+    filter: drop-shadow(0px 0px 4px black);
+}
+.logo img{
+}
+.logo img:hover{
+    filter: drop-shadow(0px 0px 4px #D7B232);
+
+}
+.seperator{
+    height: calc((100vh - 120px)/7);
+    border: solid white;
+    width: 3px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+.bg img, .bg2 img, .bg3 img, .bg4 img{
+    height: 20vh;
+    filter: drop-shadow(0px 0px 10px #000000);
+    transition: .5s;
+}
+.bg img:hover, .bg2 img:hover, .bg3 img:hover, .bg4 img:hover{
+    filter: drop-shadow(0px 0px 4px #D7B232);
+}
+.bg{
+
+    background-image: url("../CharacterScreen/Images/myramid-pic.png");
+}
+.bg2{
+    background-image: url("../CharacterScreen/Images/eexorni.svg");
+
+}
+.bg3{
+    background-image: url("../CharacterScreen/Images/asakuroni.svg");
+
+}
+.bg4{
+    background-image: url("../CharacterScreen/Images/miramarni.svg");
+
+}
+.bg, .bg2, .bg3, .bg4{
+    
+    /* c */
+    overflow: hidden;
+    
+    animation: MoveLeftRightBG 60s ease-in-out infinite;
+
+    opacity: 1; 
+
+    background-position: bottom 10px left;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 300%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.each-map-title{
+    color: white;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 92px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 20px #000000;
+    margin-bottom: 50px;
+}
+
+.each-map-description{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 40px #000000;
+}
+
+.mainDesc{
+    margin: 2.5% auto 0 auto;
+    width: 50vw;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 20px #000000;
+}
+@media only screen and (max-height: 740px)
+{
+    .left-navigation{
+        display: none;
+    }
+}
+
+@keyframes MoveLeftRightBG {
+    0%, 100% {
+        background-position: bottom 20%  left;
+    }
+    50% {
+        background-position: bottom 20%  right;
+    }
+}

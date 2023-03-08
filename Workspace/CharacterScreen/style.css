@@ -9,25 +9,26 @@
 .map-nav-logo:hover{
     filter: drop-shadow(0px 0px 4px #D7B232);
 }
-/* .bg::before {
-    content: "";
 
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    
-    background: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 80%, 
-        rgb(0, 0, 0, 1) 100%
-    ); 
-} */
+.bg{
 
-.bg {
+    background-image: url("Images/myramid-pic.png");
+}
+.bg2 {
+    background-image: url("Images/eexorni.svg");
+}
+.bg3 {
+    background-image: url("Images/asakuroni.svg");
+}
+.bg4 {
+    background-image: url("Images/miramarni.svg");
+}
+.bg, .bg2, .bg3, .bg4{
     
+    /* c */
     overflow: hidden;
     
     animation: MoveLeftRightBG 60s ease-in-out infinite;
-    background-image: url("Images/myramid-pic.png");
 
     opacity: 0.85; 
 
@@ -38,6 +39,14 @@
     background-size: 300%;
 }
 
+.bgblur::before {
+    content: "";
+
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    
+    background: linear-gradient(to top, transparent 70%, black 100%);
+}
 .bgblur{
     display: flex;
     justify-content: end;
@@ -68,6 +77,7 @@
     /* object-position: bottom; */
     max-width: calc(100vw);
     height: calc(60vh);
+    
 }
 .text-hero-desc{
     font-family: 'HYWenHei';
@@ -79,78 +89,215 @@
     /* margin-top: -10vw; */
     color:white;
 }
-.image1, .image2, .image3, .image4, .image5,.image6,.image7,.image8,.image9,.image10{
-    /* margin-top: 50px; */
+
+.image1{ 
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/5.svg');
+    
+}
+.ctr1:hover .image1{ 
+    background-image: url('Images/5.svg');
+    
+}
+.image2{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/4.svg');
+}
+.ctr2:hover .image2{
+    background-image: url('Images/4.svg');
+}
+.image3{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/3.svg');
+    
+}
+.ctr3:hover .image3{
+    background-image: url('Images/3.svg');
+}
+.image4{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/1.svg');
+}
+.ctr4:hover .image4{
+    background-image: url('Images/1.svg');
+}
+.image5{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/2.svg');
+    
+}
+.ctr5:hover .image5{
+    background-image: url('Images/2.svg');
+}
+
+.image6{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/9.svg');
+}
+.ctr6:hover .image6{
+    background-image: url('Images/9.svg');
+}
+.image7{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/8.svg');
+}
+.ctr7:hover .image7{
+    background-image: url('Images/8.svg');
+}
+
+.image8{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/6.svg');
+}
+.ctr8:hover .image8{
+    background-image: url('Images/6.svg');
+}
+
+.image9{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/7.svg');
+}
+.ctr9:hover .image9{
+    background-image: url('Images/7.svg');
+}
+.image10{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/10.svg');
+}
+.ctr10:hover .image10{
+    background-image: url('Images/10.svg');
+}
+.image11{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/11.svg');
+}
+.ctr11:hover .image11{
+    background-image: url('Images/11.svg');
+}
+.image12{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/12.svg');
+}
+.ctr12:hover .image12{
+    background-image: url('Images/12.svg');
+}
+.image13{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/14.svg');
+}
+.ctr13:hover .image13{
+    background-image: url('Images/14.svg');
+}
+.image14{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/13.svg');
+}
+.ctr14:hover .image14{
+    background-image: url('Images/13.svg');
+}
+.image15{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/15.svg');
+}
+.ctr15:hover .image15{
+    background-image: url('Images/15.svg');
+}
+.image16{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/16.svg');
+}
+.ctr16:hover .image16{
+    background-image: url('Images/16.svg');
+}
+.image17{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/17.svg');
+}
+.ctr17:hover .image17{
+    background-image: url('Images/17.svg');
+}
+.image18{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/18.svg');
+}
+.ctr18:hover .image18{
+    background-image: url('Images/18.svg');
+}
+.image19{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/19.svg');
+}
+.ctr19:hover .image19{
+    background-image: url('Images/19.svg');
+}
+.image20{
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/20.svg');
+}
+.ctr20:hover .image20{
+    background-image: url('Images/20.svg');
+}
+.image1, .image2, .image3, .image4, .image5,
+.image6, .image7, .image8, .image9, .image10,
+.image11, .image12, .image13, .image14, .image15,
+.image16, .image17, .image18, .image19, .image20{
     float: right;
     height: 70%;
     width: 100%;
     background-position: top;
-    /* background-size: 100%; */
     background-size: fill;
     overflow: hidden;
     background-repeat: no-repeat;
-    /* background-size: 110%; */
     transition: all 0.5s;
     z-index: 80;
     justify-content: center;
-    /* background-image: url('Images/hero_3.png'); */
-}
-.image1{ 
-    background-image: url('Images/5.svg');
-}
-.image2{
-    background-image: url('Images/4.svg');
-}
-.image3{
-    background-image: url('Images/3.svg');
-    
-}
-.image4{
-    background-image: url('Images/1.svg');
-}
-.image5{
-    background-image: url('Images/2.svg');
-    
-}
-.image6{
-    background-image: url('Images/9.svg');
-}
-.image7{
-    background-image: url('Images/8.svg');
-}
-.image8{
-    background-image: url('Images/6.svg');
-}
-.image9{
-    background-image: url('Images/7.svg');
-}
-.image10{
-    background-image: url('Images/10.svg');
 }
 
 
-.logo{
-    height: 15%;
-    transition: all 0.5s;
-    filter: grayscale(100%); position: relative; top: 20px;
-}
-.container:hover .logo{
-    
-    filter: none;
-}
-
-.container{
-    
-    /* min-width: 20vw; */
-    min-width: 20vw;
-    transition: all 0.5s;
-    z-index: 80;
-    
-}
-
-
-.ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4, .ctr5:hover .image5, .ctr6:hover .image6, .ctr7:hover .image7, .ctr8:hover .image8, .ctr9:hover .image9, .ctr10:hover .image10{
-    /* backdrop-filter: drop-shadow(16px 16px 10px black); */
+.ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4, .ctr5:hover .image5, 
+.ctr6:hover .image6, .ctr7:hover .image7, .ctr8:hover .image8, .ctr9:hover .image9, .ctr10:hover .image10,
+.ctr11:hover .image11,.ctr12:hover .image12,.ctr13:hover .image13,.ctr14:hover .image14,.ctr15:hover .image15,
+.ctr16:hover .image16,.ctr17:hover .image17, .ctr18:hover .image18, .ctr19:hover .image19, .ctr20:hover .image20{
     width: calc(60vw);
      filter: grayscale(0%);
     background-size: fill;
@@ -194,19 +341,59 @@
 .ctr10:hover{
     box-shadow:  0px 0px 50px 3px #E3C348;
 }
-@keyframes MoveLeftRightBG {
-    0%, 100% {
-        background-position: left;
-    }
-    50% {
-        background-position: right;
-    }
+.ctr11:hover{
+    box-shadow:  0px 0px 50px 3px #5BD6DF;
+}
+.ctr12:hover{
+    box-shadow:  0px 0px 50px 3px #5BD6DF;
+}
+.ctr13:hover{
+    box-shadow:  0px 0px 50px 3px #985AEA;
+}
+.ctr14:hover{
+    box-shadow:  0px 0px 50px 3px #5BD6DF;
+}
+.ctr15:hover{
+    box-shadow:  0px 0px 50px 3px #2993F4;
+}
+.ctr16:hover{
+    box-shadow:  0px 0px 50px 3px #2993F4;
+}
+.ctr17:hover{
+    box-shadow:  0px 0px 50px 3px #985AEA;
+}
+.ctr18:hover{
+    box-shadow:  0px 0px 50px 3px #1AD1B1;
+}
+.ctr19:hover{
+    box-shadow:  0px 0px 50px 3px #F04D43;
+}
+.ctr20:hover{
+    box-shadow:  0px 0px 50px 3px #985AEA;
+}
+
+.logo{
+    height: 15%;
+    transition: all 0.5s;
+    filter: grayscale(100%); position: relative; top: 20px;
+}
+.container:hover .logo{
+    
+    filter: none;
+}
+
+.container{
+    min-width: 20vw;
+    transition: all 0.5s;
+    z-index: 80;
+    
 }
 
 .nav2{
     left: calc(50vw - 155px); top: 90px; width: 310px; object-position: center; border-radius: 20px;
     display: flex;
     height: 65px;
+    padding: 0 10px 0 10px;
     flex-direction: row;
 }
 .nav2 div{
@@ -219,27 +406,55 @@
     width: 80%;
 }
 
+@keyframes MoveLeftRightBG {
+    0%, 100% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+}
+
+
+
 @media only screen and (max-width: 1450px){
-    
-    .ctr5{
+    .ctr5,
+    .ctr10,
+    .ctr15,
+    .ctr20{
         display: none;
     }
-    .ctr1, .ctr2, .ctr3, .ctr4{
+    .ctr1, .ctr2, .ctr3, .ctr4,
+    .ctr6, .ctr7, .ctr8, .ctr9,
+    .ctr11, .ctr12, .ctr13, .ctr14,
+    .ctr16, .ctr17, .ctr18, .ctr19{
         min-width: calc(100vw / 4);
     }
-    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4{
+    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4,
+    .ctr6:hover .image6, .ctr7:hover .image7, .ctr8:hover .image8, .ctr9:hover .image9,
+    .ctr11:hover .image11, .ctr12:hover .image12, .ctr13:hover .image13, .ctr14:hover .image14,
+    .ctr16:hover .image16, .ctr17:hover .image17, .ctr18:hover .image18, .ctr19:hover .image19{
         width: 80vw;
         margin-right: calc((80vw - (100vw/4)) / -2);
     }
 }
 @media only screen and (max-width: 1150px){
-    .ctr5, .ctr4{
+    .ctr5, .ctr4,
+    .ctr10, .ctr9,
+    .ctr15, .ctr14,
+    .ctr20, .ctr19{
         display: none;
     }
-    .ctr1, .ctr2, .ctr3{
+    .ctr1, .ctr2, .ctr3,
+    .ctr6, .ctr7, .ctr8,
+    .ctr11, .ctr12, .ctr13,
+    .ctr16, .ctr17, .ctr18{
         min-width: calc(100vw / 3);
     }
-    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3{
+    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3,
+    .ctr6:hover .image6, .ctr7:hover .image7, .ctr8:hover .image8,
+    .ctr11:hover .image11, .ctr12:hover .image12, .ctr13:hover .image13,
+    .ctr16:hover .image16, .ctr17:hover .image17, .ctr18:hover .image18{
         width: 80vw;
         margin-right: calc((80vw - (100vw/3)) / -2);
     }
@@ -249,14 +464,23 @@
         width: 200px;left: calc(50vw - 100px); 
         margin: 0 auto 0 auto;
     }
-    .ctr5, .ctr4, .ctr3{
+    .ctr5, .ctr4, .ctr3,
+    .ctr10, .ctr9, .ctr8,
+    .ctr15, .ctr14, .ctr13,
+    .ctr20, .ctr19, .ctr18{
         display: none;
     }
-    .ctr1, .ctr2{
+    .ctr1, .ctr2,
+    .ctr6, .ctr7,
+    .ctr11, .ctr12,
+    .ctr16, .ctr17{
         min-width: calc(100vw / 2);
         
     }
-    .ctr2:hover .image2, .ctr1:hover .image1{
+    .ctr2:hover .image2, .ctr1:hover .image1,
+    .ctr7:hover .image7, .ctr6:hover .image6,
+    .ctr12:hover .image12, .ctr11:hover .image11,
+    .ctr17:hover .image17, .ctr16:hover .image16{
         width: 80vw;
         margin-right: calc((80vw - (100vw/2)) / -2);
     }
