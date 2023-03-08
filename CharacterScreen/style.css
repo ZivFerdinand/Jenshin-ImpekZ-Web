@@ -1,0 +1,223 @@
+.map-nav-logo{
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    border: none;
+    padding-top: 10px;
+    transition: .5s;
+    margin: auto 0 auto 0
+}
+.map-nav-logo:hover{
+    filter: drop-shadow(0px 0px 4px #D7B232);
+}
+.bg {
+    overflow: hidden;
+    
+    animation: MoveLeftRightBG 60s ease-in-out infinite;
+    background-image: url("Images/myramid-pic.png");
+
+    opacity: 0.85; 
+
+    background-position: left;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+
+.bgblur::before {
+    content: "";
+
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    
+    background: linear-gradient(
+        to bottom, 
+        rgba(64,64,64,0) 80%, 
+        rgb(0, 0, 0, 0.8) 100%
+    ); 
+}
+.bgblur{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    
+    height: 100%;    
+    backdrop-filter: blur(10px);
+}
+.map-title{
+    margin-bottom: calc(50px);
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.heroes{
+    
+    z-index: 100;
+    
+    display: flex;
+    flex-direction: row;
+    /* object-position: bottom; */
+    max-width: calc(100vw);
+    height: calc(60vh);
+}
+.text-hero-desc{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: auto;
+    line-height: 61px;
+    height: 10%;
+    /* margin-top: -10vw; */
+    color:white;
+}
+.image1, .image2, .image3, .image4, .image5{
+    /* margin-top: 50px; */
+    float: right;
+    height: 70%;
+    width: 100%;
+    background-position: top;
+    /* background-size: 100%; */
+    background-size: fill;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    /* background-size: 110%; */
+    transition: all 0.5s;
+    z-index: 150;
+    justify-content: center;
+    /* background-image: url('Images/hero_3.png'); */
+}
+.image1{
+    background-image: url('Images/5.svg');
+    
+}
+.image2{
+    background-image: url('Images/hero_3.png');
+}
+.image3{
+    background-image: url('Images/5.svg');
+    
+}
+.image4{
+    background-image: url('Images/hero_3.png');
+}
+.image5{
+    background-image: url('Images/5.svg');
+    
+}
+
+
+.logo{
+    height: 20%;
+    transition: all 0.5s;
+    filter: grayscale(100%); position: relative; top: 20px;
+}
+.container{
+    /* min-width: 20vw; */
+    
+    min-width: 20vw;
+    transition: all 0.5s;
+    
+}
+
+.ctr1:hover, .ctr2:hover, .ctr3:hover, .ctr4:hover, .ctr5:hover{
+    
+    filter: grayscale(0%);
+}
+
+.ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4, .ctr5:hover .image5{
+    /* backdrop-filter: drop-shadow(16px 16px 10px black); */
+    width: calc(60vw);
+    background-size: fill;
+    object-position: bottom;
+    min-width: 20vw;
+    left: 10vw;
+    
+    object-position: center;
+    max-width: auto;
+    margin-right: -20vw;
+    z-index: 100;
+} 
+
+.ctr1:hover{
+    box-shadow:  0px 0px 50px 3px purple;
+}
+.ctr2:hover{
+    box-shadow:  0px 0px 50px 3px red;
+}
+.ctr3:hover{
+    box-shadow:  0px 0px 50px 3px #1AD1B1;
+}
+.ctr4:hover{
+    box-shadow:  0px 0px 50px 3px yellow;
+}
+.ctr5:hover{
+    box-shadow:  0px 0px 50px 3px white;
+}
+
+@keyframes MoveLeftRightBG {
+    0%, 100% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+}
+
+.nav2{
+    left: calc(50vw - 155px); top: 90px; width: 310px; object-position: center; border-radius: 20px;
+    display: flex;
+    height: 72px;
+    flex-direction: row;
+}
+.nav2 div{
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.nav2 img{
+    width: 80%;
+}
+@media only screen and (max-width: 1450px){
+    .ctr5{
+        display: none;
+    }
+    .ctr1, .ctr2, .ctr3, .ctr4{
+        min-width: calc(100vw / 4);
+    }
+    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3, .ctr4:hover .image4{
+        width: 80vw;
+        margin-right: calc((80vw - (100vw/4)) / -2);
+    }
+}
+@media only screen and (max-width: 1150px){
+    .ctr5, .ctr4{
+        display: none;
+    }
+    .ctr1, .ctr2, .ctr3{
+        min-width: calc(100vw / 3);
+    }
+    .ctr1:hover .image1, .ctr2:hover .image2, .ctr3:hover .image3{
+        width: 80vw;
+        margin-right: calc((80vw - (100vw/3)) / -2);
+    }
+}
+@media only screen and (max-width: 832px){
+    .ctr5, .ctr4, .ctr3{
+        display: none;
+    }
+    .ctr1, .ctr2{
+        min-width: calc(100vw / 2);
+        
+    }
+    .ctr2:hover .image2, .ctr1:hover .image1{
+        width: 80vw;
+        margin-right: -15vw;
+    }
+}
