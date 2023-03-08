@@ -344,12 +344,12 @@ nav > .nav-right-area > .login-btn{
     nav{
         padding: 0;
     }
-    nav,
+    /* nav,
     nav.black{
     background: rgba(138, 138, 138, 1);
     height: 60px;
     padding: 0;
-    }
+    } */
     nav ul{
         position: absolute;
         width: 100%;

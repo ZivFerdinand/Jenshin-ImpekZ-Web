@@ -1,5 +1,3 @@
-let upperMidFooter = document.getElementById("upper-mid-area");
-let upperMidFooterChild = document.getElementById("upper-mid-area-content");
 const mainBG = document.getElementById("mainMega");
 
 let selector = document.getElementById("selector")
@@ -44,17 +42,3 @@ mainBG.addEventListener("mousemove", (e) => {
 	mainBG.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
 });
 
-upperMidFooter.addEventListener("mouseenter", () => {
-	upperMidFooter.style.width = "150px";
-	upperMidFooter.style.borderColor = "white";
-	upperMidFooterChild.innerHTML = "English";
-	upperMidFooterChild.style.width = "14%";
-	upperMidFooterChild.style.margin = "0 100px 0 0";
-});
-upperMidFooter.addEventListener("mouseleave", () => {
-	upperMidFooter.style.width = "60px";
-	upperMidFooter.style.borderColor = "grey";
-	upperMidFooterChild.innerHTML = "";
-	upperMidFooterChild.style.width = "0";
-	upperMidFooterChild.style.margin = "0 0 0 0";
-});
