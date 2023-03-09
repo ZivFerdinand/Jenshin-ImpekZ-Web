@@ -80,7 +80,7 @@ section{
     margin: auto 0 auto 10px;
 }
 
-#checkbox{
+.agreement input{
     display: inline-block;
     margin: 0 0 0 0 ;
     height: 25px;
@@ -207,7 +207,13 @@ input::-webkit-inner-spin-button {
     color: red;
     font-size: 15px;
     
-    padding: auto 0 auto 0;
+}
+#CheckboxWarning{
+    font-family: 'HYWenHei';
+    font-style: bold;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    color: red;
 }
 @media only screen and (max-width: 1278px){
     .on-error-pw::-webkit-input-placeholder{
