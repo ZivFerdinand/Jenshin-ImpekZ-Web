@@ -15,6 +15,7 @@
     backdrop-filter: blur(25px);
 }
 
+
 body, html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -39,6 +40,31 @@ body, html{
 .responsive-bar{
     display: none;
 }
+
+.other-nav{
+    /* margin */
+    width: 300px;
+    /* border: solid white; */
+    
+    display: none; position: absolute;
+    flex-direction: column;
+    margin: 75px calc(50vw - 150px) 0 calc(50vw - 150px);
+    z-index: 2000;
+    justify-content: center;
+    
+}
+.other-nav a{
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 2.5px 0 2.5px 0;
+}
 nav{
     color: white;
     background: rgba(217, 217, 217, 0.5);
@@ -47,10 +73,10 @@ nav{
     display: flex;
     width: 100%;
     height: 72px;
-
+    /* flex-direction: column; */
     justify-content: space-between;
 
-    z-index: 1000;
+    z-index: 1200;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,13 +84,20 @@ nav{
     box-sizing: border-box;
     transition: .5s;
 }
-
+.onclick{
+    background-color: rgba(0, 0, 0, 1);
+    height: 200px;
+	/* mainNav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+	mainNav.style.height = "200px"; */
+}
 nav > .nav-left-area{
     background-color: transparent;
     border: none;
 
     display: flex;
+    flex-direction: column;
     width: 25%;
+    height: 72px;
     
     margin: 0;
     padding: 0;
@@ -86,6 +119,7 @@ nav > .nav-left-area > img:hover{
 nav > .nav-right-area{
     display: flex;
     width: 25%;
+    height: 72px;
 
     position: relative;
     float: right;
@@ -98,10 +132,12 @@ nav > .nav-right-area{
 nav > ul{
     display: flex;
     width: 50%;
+    height: 72px;
 
     position: relative;
     
     padding: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -187,7 +223,6 @@ nav > .nav-right-area > .login-btn{
     transition: .5s;  
     margin: auto 0 auto 0;
 }
-
 
 
 .footer{
@@ -327,10 +362,18 @@ nav > .nav-right-area > .login-btn{
 }
 
 /*TODO*/
-@media only screen and (min-width: 1201px){
+@media (min-width: 1201px){
     .burger-menu-btn{
         /* opacity: 1; */
         display: none;
+    }
+    .other-nav{
+        display: none;
+    }
+    nav{
+        height: 72px;
+        background: rgba(217, 217, 217, 0.5);
+
     }
 }
 @media only screen and (max-width: 1200px){
@@ -343,6 +386,8 @@ nav > .nav-right-area > .login-btn{
     
     nav{
         padding: 0;
+        /* height: 60px; */
+        background: rgba(0,0,0,0.3);
     }
     /* nav,
     nav.black{
@@ -357,7 +402,8 @@ nav > .nav-right-area > .login-btn{
         left: 0;
         background: #262626;
         float: none;
-        display: none;
+        /* display: none; */
+        /* scale: 5; */
     }
     
     nav ul li{
@@ -374,6 +420,8 @@ nav > .nav-right-area > .login-btn{
     }
     nav > .nav-left-area, nav > .nav-right-area{
         width: 50%;
+        
+    height: 72px;
     }
 
     nav > ul{
@@ -404,5 +452,11 @@ nav > .nav-right-area > .login-btn{
     }
     .bottom-logo{
         width: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .login-btn{
+        /* font-size: 10px; */
     }
 }

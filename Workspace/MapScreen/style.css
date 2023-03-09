@@ -22,10 +22,10 @@
     margin-left: 20px;
     margin-bottom: 20px;
     /* background-color: red; */
-    width: 5vw;
+    min-width: 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     /* z-index: 1000; */
 }
@@ -47,6 +47,7 @@
 .seperator{
     height: calc((100vh - 120px)/7);
     border: solid white;
+    margin: 0 auto 0 auto;
     width: 3px;
     background-color: white;
     filter: drop-shadow(0px 0px 2px black);

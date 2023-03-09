@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="main-nav">
-        <nav>
+        <nav id="main-nav">
             <a class="nav-left-area">
                 <img src="../Logos/main-logo.svg" alt="logo"/>
             </a>
@@ -29,16 +29,23 @@
             </ul>
             <div class="nav-right-area">
                 
-                <a href="../LoginPage/main.html" class="login-btn">
+                <a id="login-btn" href="../LoginPage/main.html" class="login-btn">
                     LOG IN
                 </a>
-                <a class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
+                <a  id="burger-menu-btn" class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
             
                 <a class="down-btn"><img src="../Logos/download-btn.png"></a>
             </div>
+            
+            <div id="other-nav" class="other-nav">
+                <a id="home" href="../HomeScreen/main.html">HOME</a>
+                <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                <a id="abts" href="#">ABOUT</a>
+            </div>
         </nav>
-
-        <div class="left-navigation">
+        
+        <div id="left-nav" class="left-navigation">
             <div class="logo">
                 <a href="#first-area"><img src="../CharacterScreen/Images/myramid.svg"></a>
             </div>
@@ -59,6 +66,8 @@
             </div>
         </div>
     </section>
+
+
     <div class="mainBG">
         <div class="mainTitle">World has never been so real before</div>
         <div class="mainDesc">Restorement of a great wild realistic world. Here, you
@@ -147,4 +156,5 @@ Feel unlike others experience in this world class architecture</div>
     </section>
 </body>
 <script src="../DefaultStyle/main-style.js"></script>
+<script src="main.js"></script>
 </html>

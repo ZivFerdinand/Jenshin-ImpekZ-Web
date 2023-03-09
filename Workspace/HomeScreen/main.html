@@ -16,7 +16,7 @@
 
 <body id="body"> 
     <section class="main-nav">
-        <nav>
+        <nav id="main-nav">
             <a class="nav-left-area">
                 <img src="../Logos/main-logo.svg" alt="logo"/>
             </a>
@@ -33,14 +33,22 @@
             </ul>
             <div class="nav-right-area">
                 
-                <a href="../LoginPage/main.html" class="login-btn">
+                <a id="login-btn" href="../LoginPage/main.html" class="login-btn">
                     LOG IN
                 </a>
-                <a class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
+                <a  id="burger-menu-btn" class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
             
                 <a class="down-btn"><img src="../Logos/download-btn.png"></a>
             </div>
+            
+            <div id="other-nav" class="other-nav">
+                <a id="home" href="../HomeScreen/main.html">HOME</a>
+                <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                <a id="abts" href="#">ABOUT</a>
+            </div>
         </nav>
+        
     </section>
 
     <div id="mainMega" class="main-megatron">

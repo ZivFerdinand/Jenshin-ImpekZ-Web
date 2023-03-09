@@ -15,3 +15,34 @@ upperMidFooter.addEventListener("mouseleave", () => {
 	upperMidFooterChild.style.width = "0";
 	upperMidFooterChild.style.margin = "0 0 0 0";
 });
+
+let burger = document.getElementById("burger-menu-btn")
+let mainNav = document.getElementById("main-nav");
+let othNav = document.getElementById("other-nav");
+let nav2 = document.getElementById("nav2");
+
+let leftNav = document.getElementById("left-nav");
+burger.addEventListener("mousedown", () => {
+	
+	console.log('ASU')
+	if (mainNav.classList.contains("onclick")) {
+		mainNav.classList.remove("onclick");
+		othNav.style.display = "none";
+		if(nav2)
+			nav2.style.display = "flex";
+		if (leftNav)
+			leftNav.style.display = "flex";
+	}
+	else {
+		mainNav.classList.add("onclick");
+		othNav.style.display = "flex"
+		if (nav2) nav2.style.display = "none";
+		if (leftNav) leftNav.style.display = "none";
+	}
+})
+window.addEventListener("resize", function (event) {
+		mainNav.classList.remove("onclick");
+		othNav.style.display = "none";
+		if (nav2) nav2.style.display = "flex";
+		if (leftNav) leftNav.style.display = "flex";
+});

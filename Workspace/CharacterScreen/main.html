@@ -10,12 +10,11 @@
     <link data-n-head="true" rel="icon" type="image/x-icon" href="../Logos/Genshin Impact Veja como a Paimon seria se ela fosse Adulta.webp">
     <link rel="stylesheet"href="../DefaultStyle/main-style.css">
     <link rel="stylesheet"href="style.css">
-    <link rel="stylesheet"href="shooting-stars-style.css">
   
 </head>
 <body>
     <section class="main-nav">
-        <nav>
+        <nav id="main-nav">
             <a class="nav-left-area">
                 <img src="../Logos/main-logo.svg" alt="logo"/>
             </a>
@@ -32,16 +31,23 @@
             </ul>
             <div class="nav-right-area">
                 
-                <a href="../LoginPage/main.html" class="login-btn">
+                <a id="login-btn" href="../LoginPage/main.html" class="login-btn">
                     LOG IN
                 </a>
-                <a class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
+                <a  id="burger-menu-btn" class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
             
                 <a class="down-btn"><img src="../Logos/download-btn.png"></a>
             </div>
+            
+            <div id="other-nav" class="other-nav">
+                <a id="home" href="../HomeScreen/main.html">HOME</a>
+                <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                <a id="abts" href="#">ABOUT</a>
+            </div>
         </nav>
-
-        <nav class="nav2">
+        
+        <nav id="nav2" class="nav2">
             <a href="#first-area" class="map-nav-logo"><img src="Images/myramid.svg"></a>
             <a href="#second-area" class="map-nav-logo"><img src="Images/eexor.svg"></a>
             <a href="#third-area" class="map-nav-logo"><img src="Images/asakuro.svg"></a>
@@ -248,5 +254,5 @@
     </section>
 </body>
 <script src="main.js"></script>
-<script src="../DefaultStyle/main-style.js"></script>
+<script src="../DefaultStyle/main-style.js"></script>   
 </html>111213145
