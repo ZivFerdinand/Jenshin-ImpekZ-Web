@@ -15,6 +15,7 @@
     font-family: 'HyWenHei';
     text-shadow: 0px 4px 20px #000000;
 }
+
 .left-navigation{
     position: fixed;
     margin-top: 100px;
@@ -91,10 +92,39 @@
     width: 100vw;
     background-repeat: no-repeat;
     background-size: 300%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.arrow-next{
+    position: relative  ;
+    width: 100px;
+    height: 100px;
+    
+    margin-top: 10vh;
+    /* border: solid green; */
+    /* margin-right: auto; */
+    /* margin-right: auto; */
+    
+    animation: MoveUpDown 2s infinite, pulse 2s ease-in-out infinite; 
+}
+@keyframes MoveUpDown {
+    50% {
+        bottom: 3vh;
+    }
+    0%, 100% {
+        bottom: 7vh;
+    }
+}
+@keyframes pulse {
+    0% { filter: drop-shadow(3px 4px 6px orange) }
+    50% { filter: drop-shadow(5px 12px 50px yellow) }
+    100% { filter: drop-shadow(3px 4px 6px orange) } 
+}
+@keyframes pulse-lantern {
+    0% { filter: drop-shadow(3px 4px 6px transparent) }
+    50% { filter: drop-shadow(0px 0px 19px black) }
+    100% { filter: drop-shadow(3px 4px 6px transparent) } 
 }
 
 .each-map-title{
