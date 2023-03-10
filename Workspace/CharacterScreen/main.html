@@ -60,12 +60,12 @@
         <div class="bgblur">
             <div class="map-title">Myramid</div>
             <div class="heroes">
-                <div class="container ctr1">
+                <div onclick="on()" class="container ctr1">
                     <img class="logo" src="Images/wind.svg">
                     <div class="text-hero-desc">Jane D</div>
                     <div class="image1"></div>
                 </div>
-                <div class="container ctr2">
+                <div onclick="on()" class="container ctr2">
                     <img class="logo" src="Images/flame.svg">
                     <div class="text-hero-desc">Miya</div>
                     <div class="image2"></div>
@@ -252,6 +252,20 @@
             <div class="copyright">Copyright &#169; ZTristN. All Rights Reserved.</div>
         </div>
     </section>
+
+
+    <div style="display: none" id="ovlyJaneD" class="overlay" onclick="off()">
+        <div class="bg"></div>
+        <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/07/22/b51565c6f1298e534e90b6e63332e9c1_4240077663550682265.png">
+        
+        <div class="yellowish-top"></div>
+        <div class="close-btn" ></div>
+        <div class="desc">
+            <div class="title">Jane D</div>
+            <div class="hero-desc">As the Acting Grand Master of the Knights, Jane has always been devoted to her duties and maintaining peace in Myramid. She had taken precautions long before the onset of Labys's assault, and she will guard Myramid with her life as always.</div>
+            <div class="element"></div>
+        </div>
+    </div>
 </body>
 <script src="main.js"></script>
 <script src="../DefaultStyle/main-style.js"></script>   

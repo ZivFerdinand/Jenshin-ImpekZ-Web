@@ -34,3 +34,12 @@ abts.addEventListener("mouseenter", () => {
 	selector.style.width = "15%";
 });
 abts.addEventListener("mouseleave", resetPos);
+
+
+function on() {
+	document.getElementById("ovlyJaneD").style.display = "flex";
+}
+
+function off() {
+	document.getElementById("ovlyJaneD").style.display = "none";
+}
