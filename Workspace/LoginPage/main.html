@@ -9,10 +9,46 @@
     
     <link data-n-head="true" rel="icon" type="image/x-icon" href="../Logos/Genshin Impact Veja como a Paimon seria se ela fosse Adulta.webp">
     <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href="../DefaultStyle/main-style.css">
     
 </head>
 <body>
-    <section>
+    <section class="main-nav">
+        <nav id="main-nav">
+            <a class="nav-left-area">
+                <img src="../Logos/main-logo.svg" alt="logo"/>
+            </a>
+            <ul>
+                <div>
+                    <div style="margin-left: 8.5%; width: 12%;" id="selector" class="selector"></div>
+                    <div class="menu">
+                        <a style="color: white; text-shadow: 0px 0px 20px #D7B332;" id="home" href="#">HOME</a>
+                        <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                        <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                        <a id="abts" href="#">ABOUT</a>
+                    </div>
+                </div>
+            </ul>
+            <div class="nav-right-area">
+                
+                <a id="login-btn" href="../LoginPage/main.html" class="login-btn">
+                    LOG IN
+                </a>
+                <a  id="burger-menu-btn" class="burger-menu-btn"><img src="../Logos/120px-Hamburger_icon_white.svg.png"></a>
+            
+                <a class="down-btn"><img src="../Logos/download-btn.png"></a>
+            </div>
+            
+            <div id="other-nav" class="other-nav">
+                <a id="home" href="../HomeScreen/main.html">HOME</a>
+                <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                <a id="abts" href="#">ABOUT</a>
+            </div>
+        </nav>
+        
+    </section>
+    <section class="inside">
         <div class="imageBG">
         </div>
         <div class="register-Area">
@@ -47,9 +83,9 @@
             </div>
             <div class="agreement">
                 <input id="termsCheckbox" type="checkbox"/>
-                <label for="termsCheckbox">I accept the term and condition</label>
+                <label id="termsCheckboxLabel" for="termsCheckbox">I accept the terms and conditions</label>
             </div>
-            <div id="CheckboxWarning" class="on-error-name"></div>
+            <!-- <div id="CheckboxWarning" class="on-error-name"></div> -->
             <button id ="signup" class="signup">
                 SIGN UP
             </button>

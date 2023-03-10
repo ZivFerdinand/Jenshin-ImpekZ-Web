@@ -21,7 +21,7 @@ body{
     text-decoration: none;
 }
 
-section{
+.inside{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,9 +40,9 @@ section{
     /* overflow-y: scroll; */
     backdrop-filter: blur(100px);
     width: 50vw;
-    height: calc(95vh - 80px);
+    height: calc(95vh - 100px);
     display: flex;
-    padding: 80px 0 5vh 0;
+    padding: 100px 0 5vh 0;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -66,7 +66,7 @@ section{
 }
 .agreement{
     /* border:3px solid #ddd; */
-    margin: 3% auto 0 auto;
+    margin: 3% auto -3% auto;
     display: flex;
     flex-direction: row;
     /* width: fit-content; */
@@ -78,12 +78,14 @@ section{
 }
 .agreement > label{
     margin: auto 0 auto 10px;
+    cursor: pointer;
 }
 
 .agreement input{
     display: inline-block;
     margin: 0 0 0 0 ;
     height: 25px;
+    cursor: pointer;
     width: 25px;
 }
 
@@ -128,10 +130,11 @@ margin-top: 2.5%;
     margin: auto;
     height: 7vh;
     margin-left: 2%;
-    margin-top: 3%;
+    margin-top: 2%;
     
 }
 .up-down-buttons button{
+    cursor: pointer;
     background-color: transparent;
     border: none;
 }
@@ -157,7 +160,7 @@ input{
     box-sizing: border-box;
     border-radius: 10px;
     font-weight: bold;
-    margin:  3% auto 0 auto;
+    margin:  2% auto 0 auto;
     padding: 0 3% 0 3%;
     font-size: 20px;
     transition: .5s;
@@ -193,6 +196,7 @@ input::-webkit-inner-spin-button {
     background: #599ABE;
     border-radius: 20px;
     transition: .5s;
+    cursor: pointer;
 }
 
 .signup:hover{

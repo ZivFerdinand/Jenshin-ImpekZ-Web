@@ -8,7 +8,7 @@ const inputVerifyPassword = document.getElementById("inputVerifyPassword");
 
 const buttonSubmit = document.getElementById("signup");
 
-const divTermsError = document.getElementById("CheckboxWarning")
+const divTermsError = document.getElementById("termsCheckboxLabel")
 
 const incrBtn = document.getElementById("up-btn");
 const decrBtn = document.getElementById("down-btn");
@@ -20,7 +20,7 @@ incrBtn.addEventListener("click", () => {
     }
     else
     {
-        inputAge.value++;    
+        inputAge.value++;
     }
 })
 decrBtn.addEventListener("click", () => {
@@ -88,11 +88,11 @@ buttonSubmit.addEventListener("click", async (event) => {
     const terms = inputTerms.checked
     if (terms == false) {
 
-        divTermsError.innerHTML = "Agree First!";
+        divTermsError.style.color = "red"
     }
     else
     {
-        divTermsError.innerHTML = "";
+        divTermsError.style.color = "white";
         
         }
     
