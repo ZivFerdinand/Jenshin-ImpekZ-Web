@@ -36,10 +36,20 @@ abts.addEventListener("mouseenter", () => {
 abts.addEventListener("mouseleave", resetPos);
 
 
-function on() {
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+async function on() {
+	document.getElementById("ovlyJaneD").style.opacity = "0";
 	document.getElementById("ovlyJaneD").style.display = "flex";
+	await delay(500)
+	
+	document.getElementById("ovlyJaneD").style.opacity = "1";
 }
 
-function off() {
+async function off() {
+	document.getElementById("ovlyJaneD").style.opacity = "0";
+	await delay(500)
 	document.getElementById("ovlyJaneD").style.display = "none";
 }
+
+let janeDOvrly = document.getElementById('janeDOvrly')
+janeDOvrly.addEventListener("mousedown", on)

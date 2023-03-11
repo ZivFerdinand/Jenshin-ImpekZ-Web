@@ -39,6 +39,7 @@ body{
 .register-Area{
     /* overflow-y: scroll; */
     backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     width: 50vw;
     height: calc(95vh - 100px);
     display: flex;

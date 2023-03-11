@@ -54,6 +54,7 @@
     
     height: 100%;    
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .map-title{
     margin-bottom: calc(50px);
@@ -485,7 +486,7 @@
   backdrop-filter: drop-shadow(0 0 25px black);
   display: none;
    z-index: 2000;
-    
+   transition: .5s;
 }
 .overlay .bg{
   position: absolute;
