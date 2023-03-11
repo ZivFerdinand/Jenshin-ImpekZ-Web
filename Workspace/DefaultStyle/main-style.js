@@ -16,36 +16,43 @@ upperMidFooter.addEventListener("mouseleave", () => {
 	upperMidFooterChild.style.margin = "0 0 0 0";
 });
 
+let downBtn = document.querySelector(".down-btn")
+downBtn.addEventListener("mousedown", () => {
+	downBtn.target = "_blank"
+	downBtn.href =
+		"https://genshin.hoyoverse.com/pc-launcher/?utm_source=SEA_google_ID_search_keywords_20201216&mhy_trace_channel=ga_channel&new=1&gclid=Cj0KCQiAx6ugBhCcARIsAGNmMbhkj4gtz5mqoVzcbgNoCw_FtA6dKjpEffaDX2AvycTiTnnI27YJkikaAua3EALw_wcB#/";
+
+})
+
 let burger = document.getElementById("burger-menu-btn")
 let mainNav = document.getElementById("main-nav");
 let othNav = document.getElementById("other-nav");
-let nav2 = document.getElementById("nav2");
 
+// Navigation in Characters
+let nav2 = document.getElementById("nav2");
+// Navigation in Maps
 let leftNav = document.getElementById("left-nav");
+
 burger.addEventListener("mousedown", () => {
 	
-	console.log('ASU')
 	if (mainNav.classList.contains("onclick")) {
 		mainNav.classList.remove("onclick");
 		othNav.style.display = "none";
-		if(nav2)
-			nav2.style.display = "flex";
-		if (leftNav)
-			leftNav.style.display = "flex";
+		if(nav2)		nav2.style.display = "flex";
+		if (leftNav)	leftNav.style.display = "flex";
 	}
 	else {
 		mainNav.classList.add("onclick");
-		othNav.style.display = "flex"
-		if (nav2) nav2.style.display = "none";
-		if (leftNav) leftNav.style.display = "none";
+		othNav.style.display = "flex";
+		if (nav2) 		nav2.style.display = "none";
+		if (leftNav) 	leftNav.style.display = "none";
 	}
 })
 window.addEventListener("resize", function (event) {
 	mainNav.classList.remove("onclick");
 	othNav.style.display = "none";
-	if (nav2) nav2.style.display = "flex";
-	if (leftNav) leftNav.style.display = "flex";
-	// this.location.reload()
+	if (nav2) 		nav2.style.display = "flex";
+	if (leftNav) 	leftNav.style.display = "flex";
 });
 
 

@@ -72,20 +72,20 @@
 
 
 
-@media only screen and (max-height: 900px)
+/* @media only screen and (max-height: 900px) and (orientation: landscape)
 {
     .main-megatron-buttons{
         height: 30vh;
         bottom: 55%;
     }
 }
-@media only screen and (max-height: 410px)
+@media only screen and (max-height: 410px) and (orientation: landscape)
 {
     .main-megatron-buttons{
         scale: 0.5;
         bottom: 50%;
     }
-}
+} */
 @media only screen and (max-width: 1100px)
 {
     .main-megatron-first-button img{

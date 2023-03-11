@@ -17,7 +17,10 @@
     -webkit-backdrop-filter: blur(25px);
 }
 
-
+.is-activated{
+   color: white; 
+   text-shadow: 0px 0px 20px #D7B332;
+}
 body, html{
     min-width: 320px;
     overscroll-behavior-y: none;
@@ -346,7 +349,11 @@ nav > .nav-right-area > .login-btn{
 }
 .selector
 {
-    opacity: 1; height: 10px; background-color: #D7B332;box-shadow: 0px 7px 25px #817D27;
+    transition: .5s;
+    opacity: 1; 
+    height: 10px; 
+    background-color: #D7B332;
+    box-shadow: 0px 7px 25px #817D27;
 }
 
 .burger-menu-btn {

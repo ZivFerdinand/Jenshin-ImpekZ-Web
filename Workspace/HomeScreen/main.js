@@ -6,13 +6,14 @@ let char = document.getElementById("char");
 let maps = document.getElementById("maps");
 let abts = document.getElementById("abts");
 
-selector.style.transition = "all .5s"
 function resetPos() {
 	selector.style.marginLeft = "8.5%";
 	selector.style.width = "12%";
 }
 resetPos()
 home.addEventListener("mouseenter", resetPos)
+home.addEventListener("mouseleave", resetPos)
+
 char.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "30%";
 	selector.style.width = "24%";

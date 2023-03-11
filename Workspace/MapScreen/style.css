@@ -87,7 +87,7 @@
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: 400%;
+    background-size: 500%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,8 +177,138 @@
         background-position: bottom 20%  right;
     }
 }
+/* Overlay pop uP */
+.overlayMyramid
+{
+  z-index: 1200;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.close-btn{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url('Images/xClose.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 25px;
+  top: 25px
+}
+.bg-ovly{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  
+  border-radius: 10px;
+  top: 2.5vh;
+  left: 15vw;
+  height: 95vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+.bg-ovly::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.bg-ovly::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+.bg-ovly::-webkit-scrollbar-thumb {
+  background: #D3B032; 
+  border-radius: 10px;
+}
 
-
+.bg-ovly::-webkit-scrollbar-thumb:hover {
+  background: #a58a26; 
+  border-radius: 10px;
+}
+.logo-ovly{
+  background: url('Images/myramid.svg');
+  height: 20vh;
+  width: 10vw;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.mapdesc{
+  margin-top: 3vh;
+  font-family: 'HYWenHei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 50vw;
+}
+.title{
+  margin-top: 10vh;
+  text-align: center;
+  font-family: 'HYWenHei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+}
+.changedesc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagedesc{
+    /* border: solid green; */
+  margin-top: 3%;
+  background: url('Images/image1.svg');
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  
+  width: 50vw;
+  height: 40vh;
+  /* padding-bottom: 75%; */
+}
+.imagetitle{
+  width: 30vw;
+  align-self: flex-start;
+  margin-top: 3%;
+  font-family: 'HYWenHei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: #FFFFFF;
+}
+.descfull{
+  margin-top: 2%;
+  font-family: 'HYWenHei';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  width: 50vw;
+  color: #FFFFFF;
+  height: 20vh;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 1100px){
+  .imagedesc{
+    height: 300px;
+    background-size: cover;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+  }
+  .bg, .bg2, .bg3, .bg4{
+        background-size: 200%;
+    }
+} 
 
 @media only screen and (max-width: 992px)
 {
@@ -201,6 +331,9 @@
     .mainDesc{
         font-size: 23px !important;
     }
+    .bg, .bg2, .bg3, .bg4{
+        background-size: 250%;
+    }
 }
 @media only screen and (max-width: 700px)
 {
@@ -210,9 +343,23 @@
     .mainDesc{
         font-size: 17px !important;
     }
+    .bg, .bg2, .bg3, .bg4{
+        background-size: 300%;
+    }
+}
+@media only screen and (max-width: 690px){
+  .descfull{
+    font-size: 12px;
+  }
+  .imagetitle{
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 560px)
 {
+    .bg, .bg2, .bg3, .bg4{
+        background-size: 400%;
+    }
     .mainTitle{ 
         font-size: 20px !important;
     }
@@ -220,3 +367,30 @@
         font-size: 13px !important;
     }
 }
+
+@media only screen and (max-width: 550px){
+  .title{
+    font-size: 30px;
+  }
+  .mapdesc{
+    font-size: 13px;
+  }
+  .bg, .bg2, .bg3, .bg4{
+        background-size: 450%;
+    }
+}
+
+
+
+@media only screen and (max-width: 350px){
+  .title{
+    font-size: 30px;
+  }
+  .mapdesc{
+    font-size: 13px;
+  }
+  .bg, .bg2, .bg3, .bg4{
+        background-size: 500%;
+    }
+}
+

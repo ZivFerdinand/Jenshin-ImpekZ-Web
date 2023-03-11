@@ -18,12 +18,12 @@
             </a>
             <ul>
                 <div>
-                    <div style="margin-left: 64.3%; width: 10%;" id="selector" class="selector"></div>
+                    <div style="margin-left: 64.3%; width: 10%"  id="selector" class="selector"></div>
                     <div class="menu">
                         <a id="home" href="../HomeScreen/main.html">HOME</a>
                         <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
-                        <a style="color: white; text-shadow: 0px 0px 20px #D7B332;" id="maps" href="../MapScreen/main.html">MAPS</a>
-                        <a id="abts" href="#">ABOUT</a>
+                        <a class="is-activated" id="maps" href="../MapScreen/main.html">MAPS</a>
+                        <a id="abts" href="../AboutUsPage/main.html">ABOUT</a>
                     </div>
                 </div>
             </ul>
@@ -42,7 +42,7 @@
                 <a id="home" href="../HomeScreen/main.html">HOME</a>
                 <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
                 <a id="maps" href="../MapScreen/main.html">MAPS</a>
-                <a id="abts" href="#">ABOUT</a>
+                <a id="abts" href="../AboutUsPage/main.html">ABOUT</a>
             </div>
         </nav>
         
@@ -83,7 +83,7 @@ Feel unlike others experience in this world class architecture</div>
     <section id="first-area">
     <div class="bg">
         <div class="each-map-title">Myramid</div>
-        <a><img src="../CharacterScreen/Images/myramid.svg"></a>
+        <a onclick="on()" ><img src="../CharacterScreen/Images/myramid.svg"></a>
         <div class="each-map-description">Unlock The Mystery</div>
 
     </div>
@@ -158,6 +158,21 @@ Feel unlike others experience in this world class architecture</div>
             <div class="copyright">Copyright &#169; ZTristN. All Rights Reserved.</div>
         </div>
     </section>
+
+    <div id="overlayMyramid" style="display: none" class="overlayMyramid">
+        <div class="bg-ovly" >
+            <div onclick="off()" class="close-btn"></div>
+            <div class="title">Myramid</div>
+            <img class="logo-ovly" src="Images/myramid.svg" alt="">
+            <div class="mapdesc">A city of freedom that lies in the northeast of Teyvat. From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Myramid, which sits on an island in the middle of the lake.</div>
+            <div class="title">Detail</div>
+            <div class="changedesc">
+                <div id="main-BG-Myramid" class ="imagedesc"></div>
+                <div id="main-Tl-Myramid" class="imagetitle"></div>
+                <div id="main-Desc-Myramid" class="descfull"></div>
+            </div>  
+        </div>
+    </div>
 </body>
 <script src="../DefaultStyle/main-style.js"></script>
 <script src="main.js"></script>

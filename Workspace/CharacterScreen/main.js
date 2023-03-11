@@ -5,7 +5,6 @@ let char = document.getElementById("char");
 let maps = document.getElementById("maps");
 let abts = document.getElementById("abts");
 
-selector.style.transition = "all .5s";
 function resetPos() {
 	selector.style.marginLeft = "30%";
 	selector.style.width = "24%";
@@ -17,10 +16,7 @@ home.addEventListener("mouseenter", () => {
 });
 home.addEventListener("mouseleave", resetPos);
 
-char.addEventListener("mouseenter", () => {
-	selector.style.marginLeft = "30%";
-	selector.style.width = "24%";
-});
+char.addEventListener("mouseenter", resetPos);
 char.addEventListener("mouseleave", resetPos);
 
 maps.addEventListener("mouseenter", () => {
