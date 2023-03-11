@@ -196,25 +196,25 @@
 @media only screen and (max-width: 849px)
 {
     .mainTitle{ 
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     .mainDesc{
-        font-size: 25px !important;
+        font-size: 23px !important;
     }
 }
 @media only screen and (max-width: 700px)
 {
     .mainTitle{ 
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
     .mainDesc{
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
 }
 @media only screen and (max-width: 560px)
 {
     .mainTitle{ 
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
     .mainDesc{
         font-size: 13px !important;

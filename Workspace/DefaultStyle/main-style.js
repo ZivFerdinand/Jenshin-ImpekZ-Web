@@ -45,6 +45,7 @@ window.addEventListener("resize", function (event) {
 	othNav.style.display = "none";
 	if (nav2) nav2.style.display = "flex";
 	if (leftNav) leftNav.style.display = "flex";
+	this.location.reload()
 });
 
 
