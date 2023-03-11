@@ -10,11 +10,7 @@
     justify-content: center;
 }
 
-.mainTitle{
-    font-size: 49px;
-    font-family: 'HyWenHei';
-    text-shadow: 0px 4px 20px #000000;
-}
+
 
 .left-navigation{
     position: fixed;
@@ -91,7 +87,7 @@
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: 300%;
+    background-size: 400%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,27 +148,26 @@
 
     text-shadow: 0px 0px 40px #000000;
 }
-
+.mainTitle{
+    font-size: 40px;
+    font-family: 'HyWenHei';
+    text-shadow: 0px 4px 20px #000000;
+}
 .mainDesc{
     margin: 2.5% auto 0 auto;
     width: 50vw;
     font-family: 'HYWenHei';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: px;
+    /* line-height: 26px; */
     text-align: center;
 
     color: #FFFFFF;
 
     text-shadow: 0px 4px 20px #000000;
 }
-@media only screen and (max-height: 740px)
-{
-    .left-navigation{
-        display: none;
-    }
-}
+
 
 @keyframes MoveLeftRightBG {
     0%, 100% {
@@ -180,5 +175,48 @@
     }
     50% {
         background-position: bottom 20%  right;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px)
+{
+    .left-navigation{
+        display: none !important;
+    }
+    .each-map-title{
+        font-size: 50px;
+    }
+    .each-map-description
+    {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 849px)
+{
+    .mainTitle{ 
+        font-size: 30px !important;
+    }
+    .mainDesc{
+        font-size: 23px !important;
+    }
+}
+@media only screen and (max-width: 700px)
+{
+    .mainTitle{ 
+        font-size: 25px !important;
+    }
+    .mainDesc{
+        font-size: 17px !important;
+    }
+}
+@media only screen and (max-width: 560px)
+{
+    .mainTitle{ 
+        font-size: 20px !important;
+    }
+    .mainDesc{
+        font-size: 13px !important;
     }
 }

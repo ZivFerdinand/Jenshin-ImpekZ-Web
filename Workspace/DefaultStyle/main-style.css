@@ -9,14 +9,18 @@
 
     background: rgba(138, 138, 138, 0.9);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 ::-webkit-scrollbar-thumb {
     background: rgba(217, 217, 217, 0.5);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 
 
 body, html{
+    min-width: 320px;
+    overscroll-behavior-y: none;
     scroll-behavior: smooth;
     overflow-x: hidden;
 
@@ -55,7 +59,7 @@ body, html{
 }
 .other-nav a{
     transition: .5s;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'HyWenHei';
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -63,12 +67,13 @@ body, html{
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    margin: 2.5px 0 2.5px 0;
+    margin: 5px 0 5px 0;
 }
 nav{
     color: white;
     background: rgba(217, 217, 217, 0.5);
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     
     display: flex;
     width: 100%;
@@ -86,7 +91,8 @@ nav{
 }
 .onclick{
     background-color: rgba(0, 0, 0, 1);
-    height: 200px;
+    height: 225px;
+    border-radius: 0 0 30px 30px;
 	/* mainNav.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 	mainNav.style.height = "200px"; */
 }
@@ -187,25 +193,7 @@ nav > .nav-right-area >.down-btn > img{
 nav > .nav-right-area > .down-btn:hover{
     background-color: #FFF2C3;
 }
-nav > .nav-right-area > .burger-menu-btn{
-    /* display: none; */
-    /* opacity: 0; */
-    background-color: transparent;
-    border: none;
 
-    height: 100%;
-    transition: .5s;  
-}
-nav > .nav-right-area > .burger-menu-btn > img{
-    padding: 10px;
-    height: 60%;
-    opacity: 0.5;
-    transition: .5s;  
-}
-nav > .nav-right-area > .burger-menu-btn:hover > img{
-    /* backdrop-filter: drop-shadow(0px 50px 20px #FFF2C3); */
-    opacity: 1;
-}
 nav > .nav-right-area > .login-btn{
     color: rgba(255, 255, 255, 0.5);
     background: transparent;
@@ -361,6 +349,66 @@ nav > .nav-right-area > .login-btn{
     opacity: 1; height: 10px; background-color: #D7B332;box-shadow: 0px 7px 25px #817D27;
 }
 
+.burger-menu-btn {
+    margin-right: 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 60px;
+  cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  opacity: 0.5;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.burger-menu-btn:hover{
+    opacity: 1;
+}
+.menu-btn__burger {
+  width: 72px;
+  height: 6px;
+  background: transparent;
+  border-radius: 2px;
+  /* visibility: hidden; */
+  /* box-shadow: 0 2px 5px rgba(255,101,47,.2); */
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.burger-menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  /* -webkit-transform: translateX(-50px); */
+  background: transparent;
+  box-shadow: none;
+}
+.burger-menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+  /* -webkit-transform: rotate(45deg) translate(35px, -35px); */
+}
+.burger-menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+  /* -webkit-transform: rotate(45deg) translate(35px, -35px); */
+}
 /*TODO*/
 @media (min-width: 1201px){
     .burger-menu-btn{
@@ -370,15 +418,10 @@ nav > .nav-right-area > .login-btn{
     .other-nav{
         display: none;
     }
-    nav{
-        height: 72px;
-        background: rgba(217, 217, 217, 0.5);
-
-    }
 }
 @media only screen and (max-width: 1200px){
     .login-btn{
-        font-size: 18px;
+        font-size: 10px;
     }
     .down-btn{
         display: none;
@@ -417,6 +460,9 @@ nav > .nav-right-area > .login-btn{
         line-height: 30px !important;
         color: #fff;
         
+    }
+    nav > .nav-left-area > img{
+        height: 60%;
     }
     nav > .nav-left-area, nav > .nav-right-area{
         width: 50%;
@@ -457,6 +503,6 @@ nav > .nav-right-area > .login-btn{
 
 @media only screen and (max-width: 420px){
     .login-btn{
-        /* font-size: 10px; */
+        font-size: 10px;
     }
 }
