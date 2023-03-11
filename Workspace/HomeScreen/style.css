@@ -71,11 +71,23 @@
 }
 
 
+
+@media only screen and (max-width: 900px)
+{
+    .main-megatron-buttons{
+        height: 30vh;
+        bottom: 55%;
+    }
+}
+@media only screen and (max-width: 410px)
+{
+    .main-megatron-buttons{
+        height: 20vh;
+        bottom: 65%;
+    }
+}
 @media only screen and (max-width: 1100px)
 {
-    .main-megatron-buttons > div > a{
-        /* opacity: 1;JGN LP */
-    }
     .main-megatron-first-button img{
         width: 50vw;
     }
