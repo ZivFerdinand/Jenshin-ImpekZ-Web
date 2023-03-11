@@ -62,6 +62,7 @@ rgba(64, 64, 64, 0) 3%), url('Images/Bg1.svg');
     flex-direction: column;
     z-index: 200; 
     left: 30%; 
+    
     /* height: 50vh; */
     bottom: 20%; 
     /* position: absolute;  */
@@ -69,32 +70,48 @@ rgba(64, 64, 64, 0) 3%), url('Images/Bg1.svg');
     margin-top: auto;
     border: none; 
     filter: drop-shadow(2px 2px 10px black);
-}
-.main-megatron-buttons > div{
     display: flex;
     flex-direction: row;
 }
-.main-megatron-first-button img{
-    opacity: 0.8;
-    width: 100%;
-    padding: 0 10px 0 10px; 
-    transition: .5s;
-}
-.main-megatron-first-button:hover img
-{
-    opacity: 1;
-}
-.main-megatron-buttons > div > a{
-    width: 10vw;
+
+.main-megatron-buttons > a{
+    width: calc(50vw/4);
     opacity: 0.5;
     transition: .5s;
+    scale: 1;
+
     margin: 0 auto 0 auto;
 }
-.main-megatron-buttons > div > a:hover{
+.main-megatron-buttons > a:hover{
     /* width: 10vw; */
     opacity: 1;
 }
-
+@media only screen and (max-width: 1300px){
+    .main-megatron-buttons > a{
+        scale: 0.8;
+    }
+    
+}
+@media only screen and (max-width: 1000px){
+    .main-megatron-buttons > a{
+        scale: 0.6;
+    }
+    
+}
+@media only screen and (max-width: 935px){
+    .main-megatron-buttons{
+        flex-direction: column;
+    }
+    .main-megatron-buttons a{
+        width: 50vw;
+        scale: 1;
+    }
+    .platform-box{
+        margin-top: 40px;
+        height: fit-content;
+    }
+    
+}
 .megatron2{
     background: linear-gradient(to top, 
     rgba(0, 0, 0, 1) 0%,
@@ -251,4 +268,155 @@ width: 100vw;
 text-align: center;
 color: #FFFFFF;
 text-shadow: 0px 0px 50px #000000;
+}
+.feature{
+    margin-top: 10%;
+}
+.f1,.f2{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1img,.f3img,.f5img{
+     border: 5px solid rgb(255, 255, 255);
+    background-size: cover;
+    background: url('Images/SS4.svg');
+    width: 20vw;
+    height: 24vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 0;
+    display: inline-block;
+}
+.f3img{
+    background: url('Images/feat3.svg');
+}
+.f5img{
+    background: url('Images/feat5.svg');
+    background-size: 100%;
+}
+.f2img,.f4img{
+     border: 5px solid rgb(255, 255, 255);
+    background-size: cover;
+    background: url('Images/feat2.svg');
+    width: 20vw;
+    height: 24vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 0;
+    display: inline-block;
+}
+.f4img{
+    background: url('Images/feat4.svg');
+}
+.f1desc,.f2desc{
+    display: inline-block;
+    /* border: solid yellow; */
+    /* margin: auto; */
+    background: rgba(217, 217, 217, 0.5);
+    width: 50vw;
+    height: 20vh;
+    /* align-items: center; */
+}
+.descTitleleft{
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: left;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 1%;
+}
+.descTitleright{
+    margin-right: 2%;
+    margin-top: 2%;
+    text-align: right;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 1%;
+}
+
+.longslashleft{
+    margin-left: 2%;
+    margin-top: 0%;
+    border: solid #FFFFFF;
+    width: 50%;
+}
+.longslashright{
+    float: right;
+    margin-right: 2%;
+    margin-top: 0%;
+    border: solid #FFFFFF;
+    width: 50%;
+}
+.descfullleft{
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.descfullright{
+    float: right;
+    width: 95%;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.buttonchar{
+    margin-top: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonchar img{
+    margin: 0;
+}
+.buttonpress{
+    border: none;
+    width: 15vw;
+    height:8vh !important;
+    background-color: #2993F4;
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+    margin: 0;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 8vh;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttonpress:hover{
+    background-color: #D3B032;
 }
