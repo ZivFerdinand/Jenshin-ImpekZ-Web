@@ -86,6 +86,32 @@ rgba(64, 64, 64, 0) 3%), url('Images/Bg1.svg');
     /* width: 10vw; */
     opacity: 1;
 }
+@media only screen and (max-height: 1500px){
+    .platform-box{
+        height: 100px;
+    }
+}
+@media only screen and (max-height: 620px){
+    .genshinlogo{
+        visibility: hidden;
+    }
+}
+@media only screen and (max-height: 400px){
+    .platform-box{
+        width: 700px;
+    }
+   
+    .main-megatron-buttons{
+        justify-content: center;
+        flex-direction: row !important;
+    }
+}
+@media only screen and (max-width: 700px){
+    .platform-box{
+        width: 300px;
+        justify-items: center;
+    }
+}
 @media only screen and (max-width: 1300px){
     .main-megatron-buttons > a{
         scale: 0.8;
@@ -120,7 +146,7 @@ rgba(64, 64, 64, 0) 10%,
         rgb(0, 0, 0, 1) 100%), url('Images/bg2.svg');
     background-size: cover;
     width: 100vw;
-    height: 550vh;
+    height: 4000px;
 }
 
 .game-videos{
@@ -367,7 +393,7 @@ text-shadow: 0px 0px 50px #000000;
     font-style: normal;
     text-align: left;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
 }
@@ -380,7 +406,7 @@ text-shadow: 0px 0px 50px #000000;
     font-style: normal;
     text-align: right;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     color: #000000;
 }
@@ -419,4 +445,130 @@ text-shadow: 0px 0px 50px #000000;
 
 .buttonpress:hover{
     background-color: #D3B032;
+}
+
+/* @media only screen and (max-width: 900px){
+    
+} */
+@media only screen and (max-width: 1100px){
+    .videotitle,.SStitle,.Feature-title{
+        font-size: 30px;
+    }
+    .uppervid,.lowervid,.upperSS,.lowerSS{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lowervid{
+        margin-top: 2%;
+    }
+    .SStitle img{
+        display: none;
+    }
+    .videotitle img,.Feature-title img,.buttonchar img{
+        display: none;
+    }
+    .megatron2{
+        height: 5000px;
+    }
+    .up1,.up2,.up3,.low2,.SS1,.SS2,.SS3,.SS5,.SS6{
+        width: 500px;
+        height: 250px;
+        margin-top: 2%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .low1,.SS4{
+        width: 500px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .buttonpress{
+        font-size: 15px;
+    }
+    .descfullleft,.descfullright{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 1180px){
+    .descTitleleft,.descTitleright{
+        font-size: 15px;
+    }
+    .descfullleft,.descfullright{
+        font-size: 13px;
+    }
+    .f1img,.f2img,.f3img,.f4img,.f5img{
+        display: none;
+    }
+    .f1desc,.f2desc{
+        height: 150px;
+        width: 100vw;
+    }
+}
+@media only screen and (max-width: 900px){
+    .f1desc,.f2desc{
+        width: 100vw;
+        align-items: center;
+        height: 400px;
+    }
+    .descTitleleft,.descTitleright{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    .f1desc,.f2desc{
+        height: 400px;
+    }
+    .descTitleleft,.descTitleright{
+        font-size: 14px;
+    }
+    .up1,.up2,.up3,.low2,.SS1,.SS2,.SS3,.SS5,.SS6{
+        width: 400px;
+        height: 250px;
+    }
+    .low1,.SS4{
+        width: 400px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .up1,.up2,.up3,.low2,.SS1,.SS2,.SS3,.SS5,.SS6{
+        width: 250px;
+        height: 75px;
+    }
+    .low1,.SS4{
+        width: 250px;
+        height: 75px;
+    }
+    .descTitleleft,.descTitleright{
+        font-size: 13px;
+    }
+    .descfullleft,.descfullright{
+        font-size: 10px;
+    }
+
+}
+@media only screen and (max-width: 850px){
+    .buttonpress{
+        width: 30vw;
+        font-size: 50%;
+        
+    }
+}
+@media only screen and (max-height: 900px){
+    .up1,.up2,.up3,.low1,.low2,.SS1,.SS2,.SS3,.SS4,.SS5,.SS6{
+        width: 300px;
+        height: 200px;
+    }
+    .f1desc,.f2desc{
+        height: 150px;
+    }
+    .megatron2{
+        height: 4800px;
+    }
+
 }
