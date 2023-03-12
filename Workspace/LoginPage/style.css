@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'HYWenHei';
+    src: url('../zh-cn.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    height: 100vh;
+    /* overflow-y: hidden; */
+    padding:0;
+    margin:0;
+    color: black;
+    background-image: url('Images/JenshinBackGround.svg');
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.inside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imageBG{
+    background-image: url('Images/JenshinBackGround.svg');
+    width: 50vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /* background-position: c; */
+}
+
+.register-Area{
+    /* overflow-y: scroll; */
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    width: 50vw;
+    height: calc(95vh - 100px);
+    display: flex;
+    padding: 100px 0 5vh 0;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+/* background: url('Images/logozv.svg'); */
+    border-radius: 10px;
+    height: 6vh;
+
+    width: fit-content;
+    margin: 0 auto 2% auto;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    /* margin-left: 23.5vw; */
+}
+.agreement{
+    /* border:3px solid #ddd; */
+    margin: 3% auto -3% auto;
+    display: flex;
+    flex-direction: row;
+    /* width: fit-content; */
+    font-family: 'HYWenHei';
+    font-size: 15px;
+    font-style: normal;
+    color: #FFFFFF;
+    /* margin: 0 auto 0 auto; */
+}
+.agreement > label{
+    margin: auto 0 auto 10px;
+    cursor: pointer;
+}
+
+.agreement input{
+    display: inline-block;
+    margin: 0 0 0 0 ;
+    height: 25px;
+    cursor: pointer;
+    width: 25px;
+}
+
+.register{
+font-family: 'HYWenHei';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+color: #FFFFFF;
+margin-bottom: 2.5%;
+margin-top: 2.5%;
+}
+.age-area{
+    
+    /* border: solid black; */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:  1% auto 0 auto;
+    
+    width: 60%;
+}
+
+.age-area > input{
+    /* width: 100%; */
+}
+
+.up-down-buttons{
+    padding: auto;
+    display: flex;
+    
+    margin: 0;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid green; */
+    /* width: fit-content; */
+    margin: auto;
+    height: 7vh;
+    margin-left: 2%;
+    margin-top: 2%;
+    
+}
+.up-down-buttons button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.up-down-buttons img:hover{filter: drop-shadow(0px 0px 10px white);
+}
+.age-area button img{
+    bottom:0;
+    height: 100%;
+    /* width: fit-content; */
+    /* border: solid yellow; */
+    /* padding-top: 5px; */
+    width: 100%;
+    transition: .5s;filter: drop-shadow(0px 0px 10px black);
+}
+
+
+
+input{
+    position: relative;
+    width: 60%;
+    height: 7vh;
+    background-color:#D9D9D9;  
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: bold;
+    margin:  2% auto 0 auto;
+    padding: 0 3% 0 3%;
+    font-size: 20px;
+    transition: .5s;
+    outline: none;
+    border: 3px solid rgba(255,255,255,0);
+    -webkit-transition: 0.5s;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus{
+  border: 3px solid #555;
+}
+input::placeholder{
+    font-family: 'HYWenHei';
+    font-size: 20px;
+    color: #868686;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.signup{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-size: 25px;
+    margin:5% auto 3% auto;
+    color: #FFFFFF;
+    border: none;
+    width: 40%;
+    height: 10vh;
+    background: #599ABE;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.signup:hover{
+    background: #D3B032;
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+.on-error-name::-webkit-input-placeholder, .on-error-usrnm::-webkit-input-placeholder, .on-error-em::-webkit-input-placeholder, .on-error-pw::-webkit-input-placeholder, .on-error-age::-webkit-input-placeholder{
+    color: red;
+    font-size: 15px;
+    
+}
+#CheckboxWarning{
+    font-family: 'HYWenHei';
+    font-style: bold;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    color: red;
+}
+@media only screen and (max-width: 1278px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1228px){
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 1096px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 972px){
+    .on-error-em::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .imageBG{
+        width: 0;
+    }
+    .register-Area
+    {
+        width: 100%;
+    }
+    .register{
+        margin: 20px auto 20px auto;
+    }
+    
+}
+@media only screen and (max-width: 643px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 606px){
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 524px){
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 475px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+    .on-error-em::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 606px){
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 427px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 9px;
+    }
+    .on-error-usrnm::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 408px){
+    .on-error-age::-webkit-input-placeholder{
+        font-size: 8px;
+    }
+    .on-error-em::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 385px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 8px;
+    }
+    .on-error-usrnm::-webkit-input-placeholder{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 343px){
+    .on-error-pw::-webkit-input-placeholder{
+        font-size: 7px;
+    }
+    .on-error-em::-webkit-input-placeholder{
+        font-size: 9px;
+    }
+    .on-error-name::-webkit-input-placeholder{
+        font-size: 13px;
+    }
+}

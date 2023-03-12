@@ -1,0 +1,422 @@
+.megatron{
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 0%,
+rgba(64, 64, 64, 0) 3%), url('Images/Bg1.svg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.genshinlogo{
+    margin-top: 25%;
+    width: 100vw;
+    /* border: solid #fff; */
+    background: url('Images/jenshinimpekz.svg');
+    background-position: center;
+    height: 17vh;
+    /* width: 100vw; */
+    background-repeat: no-repeat;
+}
+.desctext{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 150px #000000;
+}
+.platform-box{
+
+    
+    background: rgba(217, 217, 217, 0.3);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 10px;
+    /* border: solid #fff; */
+    width: 50vw;
+    height: 13vh;
+    margin: auto;
+}
+.platform{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 100px #000000;
+    margin: 10px auto 10px auto;
+}
+
+.main-megatron-buttons{
+    display: flex;
+    flex-direction: column;
+    z-index: 200; 
+    left: 30%; 
+    
+    /* height: 50vh; */
+    bottom: 20%; 
+    /* position: absolute;  */
+    justify-content: space-between;
+    margin-top: auto;
+    border: none; 
+    filter: drop-shadow(2px 2px 10px black);
+    display: flex;
+    flex-direction: row;
+}
+
+.main-megatron-buttons > a{
+    width: calc(50vw/4);
+    opacity: 0.5;
+    transition: .5s;
+    scale: 1;
+
+    margin: 0 auto 0 auto;
+}
+.main-megatron-buttons > a:hover{
+    /* width: 10vw; */
+    opacity: 1;
+}
+@media only screen and (max-width: 1300px){
+    .main-megatron-buttons > a{
+        scale: 0.8;
+    }
+    
+}
+@media only screen and (max-width: 1000px){
+    .main-megatron-buttons > a{
+        scale: 0.6;
+    }
+    
+}
+@media only screen and (max-width: 935px){
+    .main-megatron-buttons{
+        flex-direction: column;
+    }
+    .main-megatron-buttons a{
+        width: 50vw;
+        scale: 1;
+    }
+    .platform-box{
+        margin-top: 40px;
+        height: fit-content;
+    }
+    
+}
+.megatron2{
+    background: linear-gradient(to top, 
+    rgba(0, 0, 0, 1) 0%,
+rgba(64, 64, 64, 0) 10%,
+        rgba(64, 64, 64, 0) 95%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/bg2.svg');
+    background-size: cover;
+    width: 100vw;
+    height: 550vh;
+}
+
+.game-videos{
+    margin-top:2.5%;
+    flex-direction: row;
+    align-items: center;
+}
+.videotitle img{
+    margin-top: 10%;
+    display: inline-block;
+}
+.videotitle div{
+    display: inline-block;
+}
+.videotitle{
+    font-family: 'HYWenHei';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+width: 100vw;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 0px 50px #000000;
+}
+.uppervid,.lowervid,.upperSS,.lowerSS{
+    margin-top: 10%;
+    display: flex;
+justify-content: space-evenly;
+}
+.lowervid{
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+.lowerSS{
+    margin-top: 5%;
+}
+.up1, .up2, .up3,.low1,.low2,.SS1,.SS2,.SS3,.SS4,.SS5,.SS6{
+    
+    border: 5px solid #FFFFFF;
+    background-size: cover;
+    background: url('Images/vid1.svg');
+    width: 20vw;
+    height: 24vh;
+    background-repeat: no-repeat;
+}
+.uppervid img, .lowervid img{
+    height: 50px;
+    width: 50px;
+    padding: auto;
+    position: relative;
+    margin: auto;
+    top: calc(50% - 25px);
+    filter: drop-shadow(0 0 5px black);
+    transition: .5s;
+}
+.lowervid div{
+    margin-left: -15vw;
+    margin-right: -15vw;
+}
+.uppervid img:hover,.lowervid img:hover{
+    filter: drop-shadow(0 0 15px black);
+    -webkit-filter: drop-shadow(0 0 15px black);
+}
+.up1{
+    background: url('Images/vid1.svg');
+}
+.up2{
+    background: url('Images/vid2.svg');
+}
+.up3{
+    background: url('Images/vid3.svg');
+}
+.low1{
+    background: url('Images/vid4.svg');
+}
+.low2{
+    background: url('Images/vid5.svg');
+}
+.SS1{
+    background: url('Images/ss1.svg');
+}
+.SS2{
+    background: url('Images/ss2.svg');
+}
+.SS3{
+    background: url('Images/ss3.svg');
+}
+.SS4{
+    background: url('Images/ss4.svg');
+}
+.SS5{
+    background: url('Images/ss5.svg');
+}
+.SS6{
+    background: url('Images/ss6.svg');
+}
+
+
+.game-SS{
+    margin-top:2.5%;
+    flex-direction: row;
+    align-items: center;
+    /* border: solid #FFFFFF; */
+}
+.SStitle img{
+    margin-top: 5%;
+    display: inline-block;
+}
+.SStitle div{
+    display: inline-block;
+}
+.SStitle{
+    font-family: 'HYWenHei';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+width: 100vw;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 0px 50px #000000;
+}
+
+
+.game-Feature{
+    margin-top:2.5%;
+    flex-direction: row;
+    align-items: center;
+}
+.Feature-title img{
+    margin-top: 5%;
+    display: inline-block;
+}
+.Feature-title div{
+    display: inline-block;
+}
+.Feature-title{
+    font-family: 'HYWenHei';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+width: 100vw;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 0px 50px #000000;
+}
+.feature{
+    margin-top: 10%;
+}
+.f1,.f2{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1img,.f3img,.f5img{
+     border: 5px solid rgb(255, 255, 255);
+    background-size: cover;
+    background: url('Images/SS4.svg');
+    width: 20vw;
+    height: 24vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 0;
+    display: inline-block;
+}
+.f3img{
+    background: url('Images/feat3.svg');
+}
+.f5img{
+    background: url('Images/feat5.svg');
+    background-size: 100%;
+}
+.f2img,.f4img{
+     border: 5px solid rgb(255, 255, 255);
+    background-size: cover;
+    background: url('Images/feat2.svg');
+    width: 20vw;
+    height: 24vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 0;
+    display: inline-block;
+}
+.f4img{
+    background: url('Images/feat4.svg');
+}
+.f1desc,.f2desc{
+    display: inline-block;
+    /* border: solid yellow; */
+    /* margin: auto; */
+    background: rgba(217, 217, 217, 0.5);
+    width: 50vw;
+    height: 20vh;
+    /* align-items: center; */
+}
+.descTitleleft{
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: left;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 1%;
+}
+.descTitleright{
+    margin-right: 2%;
+    margin-top: 2%;
+    text-align: right;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 1%;
+}
+
+.longslashleft{
+    margin-left: 2%;
+    margin-top: 0%;
+    border: solid #FFFFFF;
+    width: 50%;
+}
+.longslashright{
+    float: right;
+    margin-right: 2%;
+    margin-top: 0%;
+    border: solid #FFFFFF;
+    width: 50%;
+}
+.descfullleft{
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.descfullright{
+    float: right;
+    width: 95%;
+    margin-right: 2%;
+    margin-top: 1%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    text-align: right;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.buttonchar{
+    margin-top: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonchar img{
+    margin: 0;
+}
+.buttonpress{
+    border: none;
+    width: 15vw;
+    height:8vh !important;
+    background-color: #2993F4;
+    transition: .5s ease-in-out;
+    border-radius: 20px;
+    margin: 0;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 8vh;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    text-decoration: none;
+}
+
+.buttonpress:hover{
+    background-color: #D3B032;
+}

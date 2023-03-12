@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterPage</title>
+    
+    
+    <link data-n-head="true" rel="icon" type="image/x-icon" href="../Logos/Genshin Impact Veja como a Paimon seria se ela fosse Adulta.webp">
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href="../DefaultStyle/main-style.css">
+    
+</head>
+<body>
+    <section class="main-nav">
+        <nav id="main-nav">
+            <a class="nav-left-area">
+                <img src="../Logos/main-logo.svg" alt="logo"/>
+            </a>
+            <ul>
+                <div>
+                    <div style="margin-left: 0%; width: 0%;" id="selector" class="selector"></div>
+                    <div class="menu">
+                        <a id="home" href="../HomeScreen/main.html">HOME</a>
+                        <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                        <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                        <a id="abts" href="../AboutUsPage/main.html">ABOUT</a>
+                    </div>
+                </div>
+            </ul>
+            <div class="nav-right-area">
+                
+                
+                <div id="burger-menu-btn" class="burger-menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+                <a class="down-btn"><img src="../Logos/download-btn.png"></a>
+            </div>
+            
+            <div id="other-nav" class="other-nav">
+                <a id="home" href="../HomeScreen/main.html">HOME</a>
+                <a id="char" href="../CharacterScreen/main.html">CHARACTERS</a>
+                <a id="maps" href="../MapScreen/main.html">MAPS</a>
+                <a id="abts" href="../AboutUsPage/main.html">ABOUT</a>
+            </div>
+        </nav>
+        
+    </section>
+    <section class="inside">
+        <div class="imageBG">
+        </div>
+        <div class="register-Area">
+            <div class="logo"><a><img src="Images/logozv.svg"></a></div>
+            <div class="register">Register</div>
+            <input type="text" name="inputUsername" id="inputUsername" placeholder="Username"> 
+            
+            <div id="divErrorForUsername"></div>
+            
+            <input type="text" name="inputName" id="inputName" placeholder="Name"> 
+            
+            <div id="divErrorForName"></div>
+            
+            <input type="email" name="inputEmail" id="inputEmail" placeholder="Email"> 
+            
+            <div id="divErrorForEmail"></div>
+            
+            <input type="password" name="inputPassword" id="inputPassword" placeholder="Password"> 
+            
+            <div id="divErrorForPassword"></div>
+            
+            <input type="password" name="inputPassword" id="inputVerifyPassword" placeholder="Verify Password"> 
+            
+            <div id="divErrorForVerifyPassword"></div>
+            
+            <div class="age-area">
+                <input type="number" name="inputAge" id="inputAge" placeholder="Age"> 
+                <div class="up-down-buttons">
+                    <button id="up-btn"><img src="Images/up.svg"></button>
+                    <button id="down-btn"><img  src="Images/down.svg"></button>
+                </div>
+            </div>
+            <div class="agreement">
+                <input id="termsCheckbox" type="checkbox"/>
+                <label id="termsCheckboxLabel" for="termsCheckbox">I accept the terms and conditions</label>
+            </div>
+            <!-- <div id="CheckboxWarning" class="on-error-name"></div> -->
+            <button id ="signup" class="signup">
+                SIGN UP
+            </button>
+            <div class="copyright">Jenshin Impekz<br>Copyright &#169; ZTristN. All Rights Reserved.</div>
+        
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="upper-part">
+            <a class="upper-left-area">
+                <img src="../Logos/main-logo.svg" alt="logo"/>
+            </a>
+
+            <button id="upper-mid-area" class="upper-mid-area">
+                <img src="../Logos/globe_lang.svg">
+                <div id="upper-mid-area-content"></div>
+            </button>
+
+            <div class="upper-right-area">
+                <a target="_blank" href="https://hoyo.link/59k1BbAd">
+                    <img src="../Logos/reddit_logo.svg" alt="logo"/>
+                </a>
+                <a target="_blank" href="https://hoyo.link/20k1B0Ad">
+                    <img src="../Logos/facebook_logo.svg" alt="logo"/>
+                </a>
+                <a target="_blank" href="https://hoyo.link/b7k1BCAd">
+                    <img src="../Logos/youtube_logo.svg" alt="logo"/>
+                </a>
+                <a target="_blank" href="https://hoyo.link/20k1B0Ad">
+                    <img src="../Logos/tiktok_logo.svg" alt="logo"/>
+                </a>
+                <a target="_blank" href="https://hoyo.link/59k1BaAd">
+                    <img src="../Logos/instagram_logo.svg" alt="logo"/>
+                </a>
+            </div>
+        </div>
+        <div class="lower-part">
+            <div class="conditions-part">
+                <a>Privacy Policy</a>
+                <a>Terms of Service</a>
+                <a>Contact Us</a>
+                <a>About Us</a>
+            </div>
+            <a>
+                <img  class="bottom-logo"  src="../Logos/ESRB_Teen.svg">
+            </a>
+            <a>
+                <img  class="bottom-logo" src="../Logos/comp_logo.svg">
+            </a>
+            <div class="copyright">Copyright &#169; ZTristN. All Rights Reserved.</div>
+        </div>
+    </section>
+    
+</body>
+<script src="main.js"></script>
+<script src="../DefaultStyle/main-style.js"></script>
+</html>
