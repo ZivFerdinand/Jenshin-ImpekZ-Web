@@ -1,4 +1,82 @@
+.maps-introduce{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
 
+.map-logo{
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    transition: .5s;
+}
+.map-logo:hover{
+    filter: drop-shadow(0px 0px 4px #D7B232);
+
+}
+.area-1{
+    
+    background: url('../CharacterScreen/Images/myramid-pic.png');
+}
+.area-2{
+    
+    background: url('../CharacterScreen/Images/eexorni.svg');
+}
+.area-3{
+    
+    background: url('../CharacterScreen/Images/asakuroni.svg');
+}
+.area-4{
+    
+    background: url('../CharacterScreen/Images/miramarni.svg');
+}
+.maps-area{
+    width: 100vw;
+    height: 25%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .5s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.maps-area:hover{
+    border: 10px solid white;
+    border-right: none;
+    border-left: none;
+    background-size: 130%;
+}
+.maps-area div{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 50px #000000;
+}
+@media only screen and (max-height: 550px){
+    .maps-area div{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-height: 500px){
+    .maps-area div{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-height: 460px){
+    .maps-area div{
+        display: none;
+    }
+}
 .moving-lant {
     width: calc(5vw);
 
@@ -71,97 +149,6 @@
 }
 
 
-
-@media only screen and (max-height: 500px) and (orientation: landscape)
-{
-    .main-megatron-buttons{
-        scale: 0.7;
-        bottom: 30%;
-    }
-}
-@media only screen and (max-height: 410px) and (orientation: landscape)
-{
-    .main-megatron-buttons{
-        scale: 0.5;
-        bottom: 50%;
-    }
-}
-@media only screen and (max-height: 392px) and (orientation: landscape)
-{
-    .main-megatron-buttons{
-        bottom: 30% !important;
-    }
-}
-@media only screen and (max-width: 1100px)
-{
-    .main-megatron-first-button img{
-        width: 50vw;
-    }
-   
-    .moving-hero{
-        height: 70vh;
-    }
-    .main-megatron-buttons div{
-        flex-direction: column;
-    }
-    .main-megatron-buttons{
-        /* right: 100px; */
-        left: 30%;
-        width: 70vw;
-    }
-    .main-megatron-buttons > div > a{
-        /* margin: 0 20px 0 auto; */
-        width: fit-content;
-        /* border: solid black; */
-    }
-}
-@media only screen and (max-width: 670px)
-{
-    .moving-hero{
-        /* max-height: 70vh; */
-        /* padding: 50%; */
-        /* top: 50%; */
-        /* bottom: 20vh; */
-        height: 60vh;
-        left: 1%;
-        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
-        pulse 3s ease-in-out infinite;
-    }
-    .moving-lant{
-        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
-    pulse-lantern 2s ease-in-out infinite;
-    }
-    .moving-lant-2{
-        animation: MoveUpDownForShrinked 5s ease-in-out infinite,
-    pulse-lantern 2s ease-in-out infinite; 
-    }
-
-}
-@media only screen and (max-width: 460px)
-{
-    .main-megatron-buttons{
-        left: 0;
-        width: 100vw;
-    }
-    .main-megatron-first-button{
-        width: 100%;
-        /* opacity: 0; */
-        /* display: none; */
-    }
-    .moving-hero{
-        display: none;
-        /* max-height: 70vh; */
-        /* padding: 50%; */
-        /* top: 50%; */
-        /* bottom: 20vh; */
-        height: 50vh;
-        left: 1%;
-        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
-        pulse 3s ease-in-out infinite;
-    }
-    
-
-}
 @keyframes MoveUpDownForShrinked {
     0%, 100% {
         bottom: 5vh;
@@ -249,11 +236,247 @@
     position: absolute;
 }
 
-.afterMain{
-    z-index: 90;
-
-    margin: 0;
-
-    background-color: black;
+.after-main{
+    background: linear-gradient(
+        to top, 
+        rgba(64,64,64,0) 70%, 
+        rgb(0, 0, 0, 1) 100%), url('Images/update_bg.svg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.after-main-update-header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    /* border: solid yellow; */
+    justify-content: center;
+}
+.after-main-update-header img{
+    margin: 0;  
+    display: inline-block;
+    width: 20vw;
+}
+.after-main-update-header div{
+    display: inline-block;
+}
+.after-main-update-header div{
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+    width: 30vw;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 50px #000000;
+    margin: 0;
+}
+.changing-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-ttl, .weap-ttl{
+    z-index: 10000;
+    display: inline-block;
+    margin: 0 50px 0 50px;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+
+
+    text-shadow: 0px 0px 100px #D7B232;
+    transition: .5s;
+}
+.hero-ttl:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px black; 
+    color: #aa8d26;
+} 
+.weap-ttl:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px black; 
+    color: #aa8d26;
+}
+.ttl-active{
+    color: #D7B332;
+    border-bottom: 5px solid #D7B332;
+}
+.information{
+    margin: 5% auto 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    width: 65%;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+
+}
+.pic{
+    width: 40%;
+}
+.pic img{
+    object-position: center;
+    object-fit: fill;
+    position: relative;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+}
+.pic-desc{
+    width: 52.5%;
+    padding-left: 5%;
+    padding-right: 2.5%;
+}
+.pic-desc-ttl{
+    margin-top: 5%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+
+    text-align: justify;
+}
+.underline{
+    width: 30%;
+    height: 5px;
+    background-color: #D7B332;
+}
+.pic-desc-full{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 100px #000000;
+}
+.star-manage{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.star-manage img{
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+
+}
+@media only screen and (max-height: 500px) and (orientation: landscape)
+{
+    .main-megatron-buttons{
+        scale: 0.7;
+        bottom: 30%;
+    }
+}
+@media only screen and (max-height: 410px) and (orientation: landscape)
+{
+    .main-megatron-buttons{
+        scale: 0.5;
+        bottom: 50%;
+    }
+}
+@media only screen and (max-height: 392px) and (orientation: landscape)
+{
+    .main-megatron-buttons{
+        bottom: 30% !important;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    .main-megatron-first-button img{
+        width: 50vw;
+    }
+   
+    .moving-hero{
+        height: 70vh;
+    }
+    .main-megatron-buttons div{
+        flex-direction: column;
+    }
+    .main-megatron-buttons{
+        /* right: 100px; */
+        left: 30%;
+        width: 70vw;
+    }
+    .main-megatron-buttons > div > a{
+        /* margin: 0 20px 0 auto; */
+        width: fit-content;
+        /* border: solid black; */
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    .after-main-update-header div{
+        width: 40vw;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 670px)
+{
+    .moving-hero{
+        /* max-height: 70vh; */
+        /* padding: 50%; */
+        /* top: 50%; */
+        /* bottom: 20vh; */
+        height: 60vh;
+        left: 1%;
+        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
+        pulse 3s ease-in-out infinite;
+    }
+    .moving-lant{
+        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
+    pulse-lantern 2s ease-in-out infinite;
+    }
+    .moving-lant-2{
+        animation: MoveUpDownForShrinked 5s ease-in-out infinite,
+    pulse-lantern 2s ease-in-out infinite; 
+    }
+
+}
+@media only screen and (max-width: 460px)
+{
+    .main-megatron-buttons{
+        left: 0;
+        width: 100vw;
+    }
+    .main-megatron-first-button{
+        width: 100%;
+        /* opacity: 0; */
+        /* display: none; */
+    }
+    .moving-hero{
+        display: none;
+        /* max-height: 70vh; */
+        /* padding: 50%; */
+        /* top: 50%; */
+        /* bottom: 20vh; */
+        height: 50vh;
+        left: 1%;
+        animation: MoveUpDownForShrinked 4s ease-in-out infinite,
+        pulse 3s ease-in-out infinite;
+    }
+    
+
 }
