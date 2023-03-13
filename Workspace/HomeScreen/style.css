@@ -243,6 +243,7 @@
         rgb(0, 0, 0, 1) 100%), url('Images/update_bg.svg');
     background-size: cover;
     height: 100vh;
+    min-height: 800px;
     width: 100vw;
     
     color: white;
@@ -319,7 +320,7 @@
     border-radius: 20px;
     width: 65%;
     height: 50vh;
-
+    min-height: 360px;
     display: flex;
     flex-direction: row;
 
@@ -425,6 +426,13 @@
         /* border: solid black; */
     }
 }
+
+@media only screen and (max-width: 1255px)
+{
+    .pic-desc-full{
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 800px)
 {
     .after-main-update-header div{
@@ -432,7 +440,28 @@
         font-size: 15px;
     }
 }
-
+@media only screen and (max-width: 734px)
+{
+    .pic-desc-full{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 520px)
+{
+    .pic{
+        display: none;
+    }
+    .pic-desc{
+        width: 100%;
+    }
+    .after-main-update-header img{
+        display: none;
+    }
+    .after-main-update-header div{
+        width: 80vw;
+        font-size: 35px;
+    }
+}
 @media only screen and (max-width: 670px)
 {
     .moving-hero{
