@@ -74,6 +74,11 @@
     background-image: url("../CharacterScreen/Images/miramarni.svg");
 
 }
+.bg a, .bg2 a, .bg3 , .bg4{ a
+
+  cursor: pointer;
+}
+
 .bg, .bg2, .bg3, .bg4{
     
     /* c */
@@ -178,7 +183,7 @@
     }
 }
 /* Overlay pop uP */
-.overlayMyramid
+.overlayMenu
 {
   z-index: 1200;
   position: fixed;
@@ -230,7 +235,7 @@
   border-radius: 10px;
 }
 .logo-ovly{
-  background: url('Images/myramid.svg');
+  /* background: url('Images/myramid.svg'); */
   height: 20vh;
   width: 10vw;
   align-items: center;
@@ -274,6 +279,7 @@
   height: 40vh;
   /* padding-bottom: 75%; */
 }
+
 .imagetitle{
   width: 30vw;
   align-self: flex-start;
