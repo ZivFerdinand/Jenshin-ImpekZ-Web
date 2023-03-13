@@ -65,9 +65,9 @@ textTitleHero[4] = "[2] Prototype Rancour";
 textTitleHero[5] = "[3] Royal Longsword";
 
 var textDescHero = new Array();
-textDescHero[0] = "Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang. Aside from this, she is also a talented poet whose many \"masterpieces\" have passed around Eexor's populace by word of mouth."
+textDescHero[0] = "Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang."
 textDescHero[1] = "A mysterious person who claims to work for the Ministry of Civil Affairs, but is a \"non-entity\" on the Ministry of Civil Affairs' list.Elusive, enigmatic, erratic - all of these are Yelan's hallmarks."
-textDescHero[2] = "One of the mighty and illuminated adepti guarding Liyue, also heralded as the \"Vigilant Yaksha. \"Despite his youthful appearance, tales of his exploits have been documented for millennia. He is especially fond of Wangshu Inn's Almond Tofu. This is because it tastes just like the sweet dreams he used to devour."
+textDescHero[2] = "One of the mighty and illuminated adepti guarding Liyue, also heralded as the \"Vigilant Yaksha. \"Despite his youthful appearance, tales of his exploits have been documented for millennia. He is fond of Wangshu Inn's Almond Tofu."
 
 textDescHero[3] =
 	"The profoundest of the profound is the Musou no Hitotachi. A sword art without parallel in all the world.";
@@ -103,7 +103,7 @@ async function changeImage(imgToChange, ttlToChange, descToChange, strToChange, 
 	descToChange.style.opacity = "0";
 	strToChange.style.opacity = "0";
 	undrln.style.opacity = "0"
-	if(isHeroCurrent == isHero)
+	
   await delay(500)
   
 	imgToChange.style.background = imgs[x];
@@ -116,7 +116,8 @@ async function changeImage(imgToChange, ttlToChange, descToChange, strToChange, 
 		tempStars += "<img src=\"Images/star_.svg\">";
 		}
 	strToChange.innerHTML = tempStars;
-	if (isHeroCurrent == isHero) await delay(500);
+	
+	await delay(500);
   
 	imgToChange.style.opacity = "1";
 	ttlToChange.style.opacity = "1";

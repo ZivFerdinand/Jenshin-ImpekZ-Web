@@ -187,6 +187,7 @@ nav > .nav-right-area > .down-btn{
 
     height: 100%;
     transition: .5s;  
+    cursor: pointer;
 }
 nav > .nav-right-area >.down-btn > img{
     padding: 10px;

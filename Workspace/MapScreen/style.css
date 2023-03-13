@@ -52,6 +52,7 @@
 
 .bg img, .bg2 img, .bg3 img, .bg4 img{
     height: 20vh;
+    cursor: pointer;
     filter: drop-shadow(0px 0px 10px #000000);
     transition: .5s;
 }
@@ -74,6 +75,9 @@
     background-image: url("../CharacterScreen/Images/miramarni.svg");
 
 }
+
+
+
 .bg, .bg2, .bg3, .bg4{
     
     /* c */
@@ -178,12 +182,13 @@
     }
 }
 /* Overlay pop uP */
-.overlayMyramid
+.overlayMenu
 {
   z-index: 1200;
   position: fixed;
   width: 100vw;
   height: 100vh;
+
 }
 .close-btn{
   position: absolute;
@@ -193,43 +198,58 @@
   background-size: contain;
   background-repeat: no-repeat;
   right: 25px;
-  top: 25px
+  top: 25px;
+  cursor: pointer;
+}
+.dimmer{
+  position: fixed;
+  background-color: black;
+  border: solid yellow;
 }
 .bg-ovly{
+
   position: fixed;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(0,0,0,0.5);
   
-  border-radius: 10px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.bg-ovly2{
   top: 2.5vh;
   left: 15vw;
-  height: 95vh;
+  position: fixed;
   width: 70vw;
+  height: 95vh;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
   align-items: center;
   overflow-y: auto;
+  border-radius: 10px;
 }
-.bg-ovly::-webkit-scrollbar {
+.bg-ovly2::-webkit-scrollbar {
   width: 10px;
   border-radius: 10px;
 }
-.bg-ovly::-webkit-scrollbar-track {
+.bg-ovly2::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
-.bg-ovly::-webkit-scrollbar-thumb {
+.bg-ovly2::-webkit-scrollbar-thumb {
   background: #D3B032; 
   border-radius: 10px;
 }
 
-.bg-ovly::-webkit-scrollbar-thumb:hover {
+.bg-ovly2::-webkit-scrollbar-thumb:hover {
   background: #a58a26; 
   border-radius: 10px;
 }
 .logo-ovly{
-  background: url('Images/myramid.svg');
+  /* background: url('Images/myramid.svg'); */
   height: 20vh;
   width: 10vw;
   align-items: center;
@@ -273,6 +293,7 @@
   height: 40vh;
   /* padding-bottom: 75%; */
 }
+
 .imagetitle{
   width: 30vw;
   align-self: flex-start;
