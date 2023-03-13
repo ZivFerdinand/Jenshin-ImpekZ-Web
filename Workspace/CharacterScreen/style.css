@@ -384,6 +384,7 @@
 }
 
 .container{
+    cursor: pointer;
     min-width: 20vw;
     transition: all 0.5s;
     z-index: 80;
@@ -491,6 +492,7 @@
   position: fixed;
   width: 100vw;
   height: 100%;
+  min-height: 500px;
   top: 0;
   left: 0;
   right: 0;
@@ -505,6 +507,8 @@
   display: none;
    z-index: 2000;
    transition: .5s;
+   overflow-y: scroll;
+   overflow-x: hidden;
 }
 .overlay .mybg,.eebg,.asbg,.mrbg{
   position: absolute;
@@ -557,6 +561,26 @@
   padding: 0 50px 0 0;
   font-size: 30px;
 }
+@media (max-height: 600px)
+{
+  .element{
+    display: none;
+  }
+  .overlay img{
+    left: 20vw;
+  }
+  .hero-desc{
+    font-size: 20px !important;
+    line-height: 25px;
+  }
+}
+@media (max-height: 450px)
+{
+  .hero-desc{
+    font-size: 15px !important;
+    line-height: 18px;
+  }
+}
 @media (max-width: 1400px)
 {
   .overlay img{
@@ -577,17 +601,37 @@
 
   }
 }
-
+@media (max-width: 970px)
+{
+  .hero-desc{
+    font-size: 23px;
+  }
+}
+@media (max-width: 780px)
+{
+    .title{
+        font-size: 50px;
+    }
+}
 @media (max-width: 650px)
 {
   .hero-desc{
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (max-width: 450px)
 {
+    .title{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
   .hero-desc{
-    font-size: 20px;
+    line-height: 25px;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .element{
+    display: none;
   }
 }
 @media only screen and (max-width: 1450px){

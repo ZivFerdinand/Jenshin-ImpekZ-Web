@@ -103,7 +103,7 @@ async function changeImage(imgToChange, ttlToChange, descToChange, strToChange, 
 	descToChange.style.opacity = "0";
 	strToChange.style.opacity = "0";
 	undrln.style.opacity = "0"
-	if(isHeroCurrent == isHero)
+	
   await delay(500)
   
 	imgToChange.style.background = imgs[x];
@@ -116,7 +116,8 @@ async function changeImage(imgToChange, ttlToChange, descToChange, strToChange, 
 		tempStars += "<img src=\"Images/star_.svg\">";
 		}
 	strToChange.innerHTML = tempStars;
-	if (isHeroCurrent == isHero) await delay(500);
+	
+	await delay(500);
   
 	imgToChange.style.opacity = "1";
 	ttlToChange.style.opacity = "1";
