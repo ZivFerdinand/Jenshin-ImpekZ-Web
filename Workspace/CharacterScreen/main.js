@@ -33,19 +33,62 @@ abts.addEventListener("mouseleave", resetPos);
 
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
-async function on() {
-	document.getElementById("ovlyJaneD").style.opacity = "0";
-	document.getElementById("ovlyJaneD").style.display = "flex";
+async function on(x) {
+	document.getElementById(x).style.opacity = "0";
+	document.getElementById(x).style.display = "flex";
 	await delay(500)
 	
-	document.getElementById("ovlyJaneD").style.opacity = "1";
+	document.getElementById(x).style.opacity = "1";
 }
 
-async function off() {
-	document.getElementById("ovlyJaneD").style.opacity = "0";
+async function off(x) {
+	document.getElementById(x).style.opacity = "0";
 	await delay(500)
-	document.getElementById("ovlyJaneD").style.display = "none";
+	document.getElementById(x).style.display = "none";
 }
+
+
 
 let janeDOvrly = document.getElementById('janeDOvrly')
-janeDOvrly.addEventListener("mousedown", on)
+janeDOvrly.addEventListener("mousedown", () => on("ovlyJaneD"))
+let miyaOvrly = document.getElementById('miyaOvrly')
+miyaOvrly.addEventListener("mousedown", () => on("ovlyMiya"))
+let auntyOvrly = document.getElementById('auntyOvrly')
+auntyOvrly.addEventListener("mousedown", () => on("ovlyAunty"))
+let shamsuiOvrly = document.getElementById('shamsuiOvrly')
+shamsuiOvrly.addEventListener("mousedown", () => on("ovlyShamsui"))
+let zivenOvrly = document.getElementById('zivenOvrly')
+zivenOvrly.addEventListener("mousedown", () => on("ovlyZiven"))
+
+let roxyOvrly = document.getElementById('roxyOvrly')
+roxyOvrly.addEventListener("mousedown", () => on("ovlyRoxy"))
+let nancyOvrly = document.getElementById('nancyOvrly')
+nancyOvrly.addEventListener("mousedown", () => on("ovlyNancy"))
+let chichiOvrly = document.getElementById('chichiOvrly')
+chichiOvrly.addEventListener("mousedown", () => on("ovlyChichi"))
+let hayaOvrly = document.getElementById('hayaOvrly')
+hayaOvrly.addEventListener("mousedown", () => on("ovlyHaya"))
+let xingOvrly = document.getElementById('xingOvrly')
+xingOvrly.addEventListener("mousedown", () => on("ovlyXing"))
+
+let niniOvrly = document.getElementById('niniOvrly')
+niniOvrly.addEventListener("mousedown", () => on("ovlyNini"))
+let sayakaOvrly = document.getElementById('sayakaOvrly')
+sayakaOvrly.addEventListener("mousedown", () => on("ovlySayaka"))
+let kaguyaOvrly = document.getElementById('kaguyaOvrly')
+kaguyaOvrly.addEventListener("mousedown", () => on("ovlyKaguya"))
+let annaOvrly = document.getElementById('annaOvrly')
+annaOvrly.addEventListener("mousedown", () => on("ovlyAnna"))
+let toumaOvrly = document.getElementById('toumaOvrly')
+toumaOvrly.addEventListener("mousedown", () => on("ovlyTouma"))
+
+let nilaOvrly = document.getElementById('nilaOvrly')
+nilaOvrly.addEventListener("mousedown", () => on("ovlyNila"))
+let luluOvrly = document.getElementById('luluOvrly')
+luluOvrly.addEventListener("mousedown", () => on("ovlyLulu"))
+let luckyOvrly = document.getElementById('luckyOvrly')
+luckyOvrly.addEventListener("mousedown", () => on("ovlyLucky"))
+let venoraOvrly = document.getElementById('venoraOvrly')
+venoraOvrly.addEventListener("mousedown", () => on("ovlyVenora"))
+let cleoOvrly = document.getElementById('cleoOvrly')
+cleoOvrly.addEventListener("mousedown", () => on("ovlyCleo"))

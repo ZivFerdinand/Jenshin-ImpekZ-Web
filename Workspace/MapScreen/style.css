@@ -193,7 +193,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   right: 25px;
-  top: 25px
+  top: 25px;
+  cursor: pointer;
 }
 .bg-ovly{
   position: fixed;
