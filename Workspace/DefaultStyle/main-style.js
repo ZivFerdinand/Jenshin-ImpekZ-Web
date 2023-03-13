@@ -48,16 +48,25 @@ burger.addEventListener("mousedown", () => {
 		if (leftNav) 	leftNav.style.display = "none";
 	}
 })
-window.addEventListener("resize", function (event) {
-	mainNav.classList.remove("onclick");
-	othNav.style.display = "none";
-	if (nav2) 		nav2.style.display = "flex";
-	if (leftNav) 	leftNav.style.display = "flex";
-});
 
 
 const menuBtn = document.querySelector(".burger-menu-btn");
 let menuOpen = false;
+window.addEventListener("resize", function (event) {
+	mainNav.classList.remove("onclick");
+	othNav.style.display = "none";
+	if (nav2) 		nav2.style.display = "flex";
+	if (leftNav) leftNav.style.display = "flex";
+	
+	if (menuOpen)
+	{
+		menuBtn.classList.remove("open");
+		menuOpen = false;
+		
+		}
+});
+
+
 menuBtn.addEventListener("click", () => {
 	if (!menuOpen) {
 		menuBtn.classList.add("open");
