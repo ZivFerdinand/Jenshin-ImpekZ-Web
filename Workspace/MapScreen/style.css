@@ -52,6 +52,7 @@
 
 .bg img, .bg2 img, .bg3 img, .bg4 img{
     height: 20vh;
+    cursor: pointer;
     filter: drop-shadow(0px 0px 10px #000000);
     transition: .5s;
 }
@@ -74,10 +75,8 @@
     background-image: url("../CharacterScreen/Images/miramarni.svg");
 
 }
-.bg a, .bg2 a, .bg3 , .bg4{ a
 
-  cursor: pointer;
-}
+
 
 .bg, .bg2, .bg3, .bg4{
     
@@ -189,6 +188,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
+
 }
 .close-btn{
   position: absolute;
@@ -202,6 +202,7 @@
   cursor: pointer;
 }
 .bg-ovly{
+
   position: fixed;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(25px);
