@@ -6,6 +6,7 @@
     color:#FFFFFF;
 
     height: 100vh;
+    min-height: 705px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,18 +66,21 @@
     filter: drop-shadow(0px 0px 4px #D7B232);
 }
 .bg{
-
+    min-height: 350px;
     background-image: url("../CharacterScreen/Images/myramid-pic.png");
 }
 .bg2{
+    min-height: 350px;
     background-image: url("../CharacterScreen/Images/eexorni.svg");
 
 }
 .bg3{
+    min-height: 350px;
     background-image: url("../CharacterScreen/Images/asakuroni.svg");
 
 }
 .bg4{
+    min-height: 350px;
     background-image: url("../CharacterScreen/Images/miramarni.svg");
 
 }
@@ -235,6 +239,11 @@
   height: 20vh;
   width: 10vw;
   align-items: center;
+
+  transition: .5s;
+}
+.logo-ovly:hover{
+  filter: drop-shadow(0 0 20px #D3B032);
 }
 .mapdesc{
   margin-top: 3vh;
@@ -425,4 +434,3 @@
         background-size: 500%;
     }
 }
-

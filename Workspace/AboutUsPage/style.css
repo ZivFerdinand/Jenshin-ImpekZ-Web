@@ -7,6 +7,7 @@
 
     width: 100vw;
     height: 100vh;
+    min-height: 700px;
 
     display: flex;
     flex-direction: column;
@@ -178,6 +179,9 @@
 .low2{
     background: url('Images/vid5.svg');
 }
+.SS1, .SS2, .SS3, .SS4, .SS5, .SS6{
+    transition: .5s;
+}
 .SS1{
     background: url('Images/ss1.svg');
 }
@@ -195,6 +199,9 @@
 }
 .SS6{
     background: url('Images/ss6.svg');
+}
+.SS1:hover, .SS2:hover, .SS3:hover, .SS4:hover, .SS5:hover, .SS6:hover{
+    filter: drop-shadow(0 0 20px black);
 }
 
 
