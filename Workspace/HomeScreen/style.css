@@ -1,13 +1,15 @@
 .maps-introduce{
-    height: 80vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
+    height: 80vh;
+    width: 100vw;
 }
 
 .map-logo{
-    width: fit-content;
     margin: 0 auto 0 auto;
+
+    width: fit-content;
+
     transition: .5s;
 }
 .map-logo:hover{
@@ -31,22 +33,24 @@
     background: url('../CharacterScreen/Images/miramarni.svg');
 }
 .maps-area{
-    width: 100vw;
-    height: 25%;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    transition: .5s;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
+    height: 25%;
+    
+    transition: .5s;
 }
 .maps-area:hover{
+    background-size: 130%;
+
     border: 10px solid white;
     border-right: none;
     border-left: none;
-    background-size: 130%;
 }
 .maps-area div{
     font-family: 'HYWenHei';
@@ -54,39 +58,21 @@
     font-weight: 400;
     font-size: 21px;
     line-height: 26px;
-    /* identical to box height */
-
     text-align: center;
-
     color: #FFFFFF;
-
     text-shadow: 0px 0px 50px #000000;
 }
-@media only screen and (max-height: 550px){
-    .maps-area div{
-        font-size: 15px;
-    }
-}
-@media only screen and (max-height: 500px){
-    .maps-area div{
-        font-size: 12px;
-    }
-}
-@media only screen and (max-height: 460px){
-    .maps-area div{
-        display: none;
-    }
-}
+
 .moving-lant {
     width: calc(5vw);
+    rotate: -10deg;
 
     position: absolute;
-    rotate: -10deg;
     right: 19%;
     bottom: 20%;
 
     animation: MoveUpDown 4s ease-in-out infinite,
-    pulse-lantern 2s ease-in-out infinite;
+                pulse-lantern 2s ease-in-out infinite;
 }
 .moving-lant-2 {
     width: calc(8vw);
@@ -98,10 +84,9 @@
 
     animation-delay: 1s;
     animation: MoveUpDown 5s ease-in-out infinite,
-    pulse-lantern 2s ease-in-out infinite; 
+                pulse-lantern 2s ease-in-out infinite; 
 }
 .moving-hero{
-    /* width: calc(20vw); */
     height: 80vh;
     
     position: absolute;
@@ -109,18 +94,21 @@
     bottom: 10%;
 
     animation: MoveUpDown 4s ease-in-out infinite,
-    pulse 3s ease-in-out infinite;
+                pulse 3s ease-in-out infinite;
 }
 .main-megatron-buttons{
-    display: flex;
-    flex-direction: column;
     z-index: 200; 
+
+    position: absolute; 
     left: 30%; 
     height: 50vh;
     bottom: 20%; 
-    position: absolute; 
-    justify-content: space-between;
     border: none; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     filter: drop-shadow(2px 2px 10px black);
 }
 .main-megatron-buttons > div{
@@ -128,9 +116,11 @@
     flex-direction: row;
 }
 .main-megatron-first-button img{
-    opacity: 0.8;
-    width: 100%;
     padding: 0 10px 0 10px; 
+
+    width: 100%;
+    opacity: 0.8;
+
     transition: .5s;
 }
 .main-megatron-first-button:hover img
@@ -138,17 +128,207 @@
     opacity: 1;
 }
 .main-megatron-buttons > div > a{
-    width: 10vw;
     opacity: 0.5;
-    transition: .5s;
+    
     margin: 0 auto 0 auto;
+
+    width: 10vw;
+
+    transition: .5s;
 }
 .main-megatron-buttons > div > a:hover{
-    /* width: 10vw; */
     opacity: 1;
 }
 
+.main-megatron::before {
+    content: "";
+    background: linear-gradient(to bottom, 
+                                rgba(64,64,64,0) 85%, 
+                                rgb(0, 0, 0, 1) 100%); 
 
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    
+}
+.main-megatron {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("Images/main-megatron.jpg");
+    background-size: cover;
+
+    position: relative;
+    resize: horizontal;
+
+    display: block;
+    width: calc(110vw);
+    max-width: calc(200vw);
+    height: 100vh;
+}
+.main-megatron > #bg-image{
+    overflow-x: hidden;
+
+    width: 100vw;
+    vertical-align: middle;
+}
+.main-megatron > #lantern{
+    position: absolute;
+}
+
+.after-main{
+    background: linear-gradient(to top, 
+                                rgba(64,64,64,0) 70%, 
+                                rgb(0, 0, 0, 1) 100%), 
+                url('Images/update_bg.svg');
+    background-size: cover;
+
+    color: white;
+
+    height: 100vh;
+    min-height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.after-main-update-header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+}
+.after-main-update-header img{
+    margin: 0;  
+
+    display: inline-block;
+    width: 20vw;
+}
+.after-main-update-header div{
+    display: inline-block;
+}
+.after-main-update-header div{
+    margin: 0;
+
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 50px #000000;
+    
+    width: 30vw;
+}
+.changing-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-ttl, .weap-ttl{
+    z-index: 10000;
+
+    margin: 0 50px 0 50px;
+
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    text-shadow: 0px 0px 100px #D7B232;
+    
+    display: inline-block;
+
+    transition: .5s;
+}
+.hero-ttl:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px black; 
+    color: #aa8d26;
+} 
+.weap-ttl:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 10px black; 
+    color: #aa8d26;
+}
+.ttl-active{
+    color: #D7B332;
+    border-bottom: 5px solid #D7B332;
+}
+.information{
+    background-color: rgba(0,0,0,0.5);
+
+    margin: 5% auto 0 auto;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: 50vh;
+    min-height: 360px;
+}
+.pic{
+    width: 40%;
+}
+.pic img{
+    object-position: center;
+    object-fit: fill;
+
+    position: relative;
+    top: -10%;
+    left: -10%;
+
+    width: 120%;
+    height: 120%;
+}
+.pic-desc{
+    padding-left: 5%;
+    padding-right: 2.5%;
+
+    width: 52.5%;
+}
+.pic-desc-ttl{
+    margin-top: 5%;
+
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: justify;
+}
+.underline{
+    background-color: #D7B332;
+
+    width: 30%;
+    height: 5px;
+}
+.pic-desc-full{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 100px #000000;
+}
+.star-manage{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.star-manage img{
+    margin-right: 5px;
+    
+    width: auto;
+    height: 100%;
+
+}
 @keyframes MoveUpDownForShrinked {
     0%, 100% {
         bottom: 5vh;
@@ -198,191 +378,23 @@
     }
 }
 
-.main-megatron::before {
-    content: "";
 
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    
-    background: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 85%, 
-        rgb(0, 0, 0, 1) 100%
-    ); 
+@media only screen and (max-height: 550px){
+    .maps-area div{
+        font-size: 15px;
+    }
 }
-.main-megatron {
-    background-position: center;
-    display: block;
-
-    max-width: calc(200vw);
-    width: calc(110vw);
-    background-size: cover;
-    height: 100vh;
-
-    position: relative;
-    resize: horizontal;
-    /* padding-bottom: 50%;  */
-    background-repeat: no-repeat;
-    background-image: url("Images/main-megatron.jpg");
+@media only screen and (max-height: 500px){
+    .maps-area div{
+        font-size: 12px;
+    }
 }
-.main-megatron > #bg-image{
-    overflow-x: hidden;
-
-    width: 100vw;
-
-    vertical-align: middle;
-}
-.main-megatron > #lantern{
-    position: absolute;
+@media only screen and (max-height: 460px){
+    .maps-area div{
+        display: none;
+    }
 }
 
-.after-main{
-    background: linear-gradient(
-        to top, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/update_bg.svg');
-    background-size: cover;
-    height: 100vh;
-    min-height: 800px;
-    width: 100vw;
-    
-    color: white;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.after-main-update-header{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 50px;
-    /* border: solid yellow; */
-    justify-content: center;
-}
-.after-main-update-header img{
-    margin: 0;  
-    display: inline-block;
-    width: 20vw;
-}
-.after-main-update-header div{
-    display: inline-block;
-}
-.after-main-update-header div{
-    font-family: 'HYWenHei';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 61px;
-    width: 30vw;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 50px #000000;
-    margin: 0;
-}
-.changing-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.hero-ttl, .weap-ttl{
-    z-index: 10000;
-    display: inline-block;
-    margin: 0 50px 0 50px;
-    font-family: 'HYWenHei';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: justify;
-
-
-    text-shadow: 0px 0px 100px #D7B232;
-    transition: .5s;
-}
-.hero-ttl:hover{
-    cursor: pointer;
-    text-shadow: 0px 0px 10px black; 
-    color: #aa8d26;
-} 
-.weap-ttl:hover{
-    cursor: pointer;
-    text-shadow: 0px 0px 10px black; 
-    color: #aa8d26;
-}
-.ttl-active{
-    color: #D7B332;
-    border-bottom: 5px solid #D7B332;
-}
-.information{
-    margin: 5% auto 0 auto;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 20px;
-    width: 65%;
-    height: 50vh;
-    min-height: 360px;
-    display: flex;
-    flex-direction: row;
-
-}
-.pic{
-    width: 40%;
-}
-.pic img{
-    object-position: center;
-    object-fit: fill;
-    position: relative;
-    width: 120%;
-    height: 120%;
-    top: -10%;
-    left: -10%;
-}
-.pic-desc{
-    width: 52.5%;
-    padding-left: 5%;
-    padding-right: 2.5%;
-}
-.pic-desc-ttl{
-    margin-top: 5%;
-    font-family: 'HYWenHei';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    /* identical to box height */
-
-    text-align: justify;
-}
-.underline{
-    width: 30%;
-    height: 5px;
-    background-color: #D7B332;
-}
-.pic-desc-full{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-family: 'HYWenHei';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: justify;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 0px 100px #000000;
-}
-.star-manage{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-.star-manage img{
-    width: auto;
-    height: 100%;
-    margin-right: 5px;
-
-}
 @media only screen and (max-height: 500px) and (orientation: landscape)
 {
     .main-megatron-buttons{
