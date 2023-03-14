@@ -1,10 +1,13 @@
 .map-nav-logo{
-    color: rgba(255, 255, 255, 0.5);
     background: transparent;
+
+    color: rgba(255, 255, 255, 0.5);
+
     border: none;
     padding-top: 10px;
+    margin: auto 0 auto 0;
+
     transition: .5s;
-    margin: auto 0 auto 0
 }
 .map-nav-logo:hover{
     filter: drop-shadow(0px 0px 4px #D7B232);
@@ -24,19 +27,18 @@
     background-image: url("Images/miramarni.svg");
 }
 .bg, .bg2, .bg3, .bg4{
-    
-    /* c */
-    overflow: hidden;
-    
-    animation: MoveLeftRightBG 60s ease-in-out infinite;
-
-    opacity: 0.85; 
-
-    background-position: left;
-    height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
     background-size: 500%;
+    background-position: left;
+
+    overflow: hidden;
+    
+    opacity: 0.85; 
+
+    height: 100vh;
+    width: 100vw;
+
+    animation: MoveLeftRightBG 60s ease-in-out infinite;
 }
 
 .bgblur::before {
@@ -52,30 +54,29 @@
     justify-content: end;
     flex-direction: column;
     
-    height: 100%;    
+    height: 100%;
+
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 .map-title{
     margin-bottom: calc(50px);
+
     font-family: 'HYWenHei';
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 61px;
-
     text-align: center;
-
     color: #FFFFFF;
 }
 
 .heroes{
-    
     z-index: 100;
     
     display: flex;
     flex-direction: row;
-    /* object-position: bottom; */
+    
     max-width: calc(100vw);
     height: calc(60vh);
     
@@ -86,55 +87,54 @@
     font-weight: 400;
     font-size: auto;
     line-height: 61px;
-    height: 15%;
-    /* margin-top: -10vw; */
     color:white;
+
+    height: 15%;
 }
 
 .image1{ 
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/5.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/5.svg');
     
 }
 .ctr1:hover .image1{ 
     background-image: url('Images/5.svg');
-    
 }
 .image2{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/4.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgba(0, 0, 0, 1) 100%), 
+                        url('Images/4.svg');
 }
 .ctr2:hover .image2{
     background-image: url('Images/4.svg');
 }
 .image3{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/3.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/3.svg');
     
 }
 .ctr3:hover .image3{
     background-image: url('Images/3.svg');
 }
 .image4{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/1.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/1.svg');
 }
 .ctr4:hover .image4{
     background-image: url('Images/1.svg');
 }
 .image5{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/2.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/2.svg');
     
 }
 .ctr5:hover .image5{
@@ -142,138 +142,138 @@
 }
 
 .image6{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/9.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/9.svg');
 }
 .ctr6:hover .image6{
     background-image: url('Images/9.svg');
 }
 .image7{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/8.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/8.svg');
 }
 .ctr7:hover .image7{
     background-image: url('Images/8.svg');
 }
 
 .image8{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/6.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/6.svg');
 }
 .ctr8:hover .image8{
     background-image: url('Images/6.svg');
 }
 
 .image9{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/7.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/7.svg');
 }
 .ctr9:hover .image9{
     background-image: url('Images/7.svg');
 }
 .image10{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/10.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/10.svg');
 }
 .ctr10:hover .image10{
     background-image: url('Images/10.svg');
 }
 .image11{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/11.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/11.svg');
 }
 .ctr11:hover .image11{
     background-image: url('Images/11.svg');
 }
 .image12{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/12.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/12.svg');
 }
 .ctr12:hover .image12{
     background-image: url('Images/12.svg');
 }
 .image13{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/14.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/14.svg');
 }
 .ctr13:hover .image13{
     background-image: url('Images/14.svg');
 }
 .image14{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/13.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/13.svg');
 }
 .ctr14:hover .image14{
     background-image: url('Images/13.svg');
 }
 .image15{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/15.svg');
+    background-image:   linear-gradient(to bottom, 
+                                        rgba(64,64,64,0) 70%, 
+                                        rgb(0, 0, 0, 1) 100%), 
+                        url('Images/15.svg');
 }
 .ctr15:hover .image15{
     background-image: url('Images/15.svg');
 }
 .image16{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/16.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/16.svg');
 }
 .ctr16:hover .image16{
     background-image: url('Images/16.svg');
 }
 .image17{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/17.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/17.svg');
 }
 .ctr17:hover .image17{
     background-image: url('Images/17.svg');
 }
 .image18{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/18.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/18.svg');
 }
 .ctr18:hover .image18{
     background-image: url('Images/18.svg');
 }
 .image19{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/19.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/19.svg');
 }
 .ctr19:hover .image19{
     background-image: url('Images/19.svg');
 }
 .image20{
-    background-image: linear-gradient(
-        to bottom, 
-        rgba(64,64,64,0) 70%, 
-        rgb(0, 0, 0, 1) 100%), url('Images/20.svg');
+    background-image:   linear-gradient(to bottom, 
+                                    rgba(64,64,64,0) 70%, 
+                                    rgb(0, 0, 0, 1) 100%), 
+                        url('Images/20.svg');
 }
 .ctr20:hover .image20{
     background-image: url('Images/20.svg');
@@ -282,16 +282,20 @@
 .image6, .image7, .image8, .image9, .image10,
 .image11, .image12, .image13, .image14, .image15,
 .image16, .image17, .image18, .image19, .image20{
+    overflow: hidden;
+    z-index: 80;
+
+    background-position: top;
+    background-size: fill;
+    background-repeat: no-repeat;
+
+    justify-content: center;
+
     float: right;
     height: 70%;
     width: 100%;
-    background-position: top;
-    background-size: fill;
-    overflow: hidden;
-    background-repeat: no-repeat;
+    
     transition: all 0.5s;
-    z-index: 80;
-    justify-content: center;
 }
 
 
@@ -299,17 +303,19 @@
 .ctr6:hover .image6, .ctr7:hover .image7, .ctr8:hover .image8, .ctr9:hover .image9, .ctr10:hover .image10,
 .ctr11:hover .image11,.ctr12:hover .image12,.ctr13:hover .image13,.ctr14:hover .image14,.ctr15:hover .image15,
 .ctr16:hover .image16,.ctr17:hover .image17, .ctr18:hover .image18, .ctr19:hover .image19, .ctr20:hover .image20{
-    width: calc(60vw);
-     filter: grayscale(0%);
-    background-size: fill;
-    object-position: bottom;
-    min-width: 20vw;
-    left: 10vw;
     
-    object-position: center;
-    max-width: auto;
-    margin-right: -20vw;
     z-index: 150;
+    background-size: fill;
+    object-position: center;
+    
+    left: 10vw;
+    margin-right: -20vw;
+
+    filter: grayscale(0%);
+
+    min-width: 20vw;
+    width: calc(60vw);
+    max-width: auto;
 } 
 
 .ctr1:hover{
@@ -374,33 +380,45 @@
 }
 
 .logo{
+    position: relative; 
+    top: 20px;
+
     height: 15%;
+    filter: grayscale(100%); 
+
     transition: all 0.5s;
-    filter: grayscale(100%); position: relative; top: 20px;
 }
 .container:hover .logo{
-    
     filter: none;
 }
 
 .container{
     cursor: pointer;
-    min-width: 20vw;
-    transition: all 0.5s;
     z-index: 80;
-    
+
+    min-width: 20vw;
+
+    transition: all 0.5s;
 }
 
 .nav2{
-    left: calc(50vw - 155px); top: 90px; width: 310px; object-position: center; border-radius: 20px;
-    display: flex;
-    height: 65px;
+    left: calc(50vw - 155px); 
+    top: 90px; 
     padding: 0 10px 0 10px;
+    border-radius: 20px;
+
+    display: flex;
     flex-direction: row;
+    object-position: center; 
+    
+    width: 310px; 
+    height: 65px;
 }
 .nav2 div{
-    height: 100%;
     text-align: center;
+
+    height: 100%;
+    
     align-items: center;
     justify-items: center;
 }
@@ -419,18 +437,18 @@
 
 .title{
   margin-top: 20vh;
+
   font-family: 'HyWenHei';
   font-style: normal;
   font-weight: 400;
   font-size: 66px;
   line-height: 80px;
-
   color: #FFFFFF;
-
   text-shadow: 0px 4px 50px #000000;
 }
 .hero-desc{
   margin-top: 5vh;
+
   font-family: 'HYWenHei';
   font-style: normal;
   font-weight: 400;
@@ -461,67 +479,77 @@
 .desc .element{
   background-size: contain;
   background-repeat: no-repeat;
+
+  margin: auto auto 3vw 20vh;
+
   width: 20vw;
   height: 20vh;
-  margin: auto auto 3vw 20vh;
 }
 .yellowish-top{
-  position: absolute;
-  /* top: 0; */
-  height: 20px;
-  width: 60vw;
   box-shadow: 0px 7px 25px #817D27;
   background-color: #D7B332;
+
+  position: absolute;
   margin-left: calc(50vw - 30vw);
+
+  height: 20px;
+  width: 60vw;
 }
 .close-btn{
-  position: absolute;
-  /* top: 0; */
-  height: 50px;
-  width: 50px;
+  cursor: pointer;
+
   background-image: url('Images/xClose.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
+  position: absolute;
   right: 25px;
   top: 25px;
-  cursor: pointer;
+  
+  height: 50px;
+  width: 50px;
 }
 .overlay {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  width: 100vw;
-  height: 100%;
-  min-height: 500px;
-  top: 0;
-  left: 0;
-  right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.8);
-  /* z-index: 2; */
-  cursor: pointer;
     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right -20%;
-  backdrop-filter: drop-shadow(0 0 25px black);
-  display: none;
-   z-index: 2000;
-   transition: .5s;
-   overflow-y: scroll;
-   overflow-x: hidden;
+    background-size: cover;
+    background-position: right -20%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: drop-shadow(0 0 25px black);
+
+    z-index: 2000;
+    cursor: pointer;
+   
+    width: 100vw;
+    height: 100%;
+    min-height: 500px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    display: flex;
+    flex-direction: row;
+    display: none;
+    transition: .5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .overlay .mybg,.eebg,.asbg,.mrbg{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background: url('Images/myramid-pic.png');
-   clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background: url('Images/myramid-pic.png');
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
 }
 .overlay .mrbg{
     background: url('Images/mrbg.svg');
@@ -533,33 +561,34 @@
     background: url('Images/asbg.svg');
 }
 .overlay img{
-  position: absolute;
-  max-width: fit-content;
-  top: 0;
-  left: 0;
-  transform: translateX(-30vw);
-  height: 100vh;
-  /* max-width: 50vw; */
-  /* border: solid white; */
-  /* margin-left: -30vw; */
-  filter: drop-shadow(0 0 25px white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-30vw);
+
+    max-width: fit-content;
+    height: 100vh;
+    
+    filter: drop-shadow(0 0 25px white);
 }
 .overlay .desc{
-  /* border: 10px solid white; */
-  position: absolute;
-  right: 0;
-  width: 60vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+    position: absolute;
+    right: 0;
+
+    width: 60vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 .title{
     text-align: left;
-  font-size: 100px;
+    font-size: 100px;
 }
 .hero-desc{
-  padding: 0 50px 0 0;
-  font-size: 30px;
+    padding: 0 50px 0 0;
+
+    font-size: 30px;
 }
 @media (max-height: 600px)
 {
