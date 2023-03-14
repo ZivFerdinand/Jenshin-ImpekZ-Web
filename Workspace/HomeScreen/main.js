@@ -1,6 +1,7 @@
+
 const mainBG = document.getElementById("mainMega");
 
-let selector = document.getElementById("selector")
+let selector = document.getElementById("selector");
 let home = document.getElementById("home");
 let char = document.getElementById("char");
 let maps = document.getElementById("maps");
@@ -11,15 +12,15 @@ function resetPos() {
 	selector.style.marginLeft = "8.5%";
 	selector.style.width = "12%";
 }
-resetPos()
-home.addEventListener("mouseenter", resetPos)
-home.addEventListener("mouseleave", resetPos)
+resetPos();
+home.addEventListener("mouseenter", resetPos);
+home.addEventListener("mouseleave", resetPos);
 
 char.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "30%";
 	selector.style.width = "24%";
-})
-char.addEventListener("mouseleave", resetPos)
+});
+char.addEventListener("mouseleave", resetPos);
 
 maps.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "64.3%";
@@ -44,19 +45,18 @@ mainBG.addEventListener("mousemove", (e) => {
 	mainBG.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
 });
 
-
 var imagesHero = new Array();
-let x = 0
-imagesHero[0] = "Images/ghosties.svg"
+let x = 0;
+imagesHero[0] = "Images/ghosties.svg";
 imagesHero[1] = "Images/ghosties_2.svg";
 imagesHero[2] = "Images/ghosties_3.svg";
 
-imagesHero[3] = "Images/weap.svg"
+imagesHero[3] = "Images/weap.svg";
 imagesHero[4] = "Images/weap_2.svg";
 imagesHero[5] = "Images/weap_3.svg";
 
 var textTitleHero = new Array();
-textTitleHero[0] = "[1] Hu Tao"
+textTitleHero[0] = "[1] Hu Tao";
 textTitleHero[1] = "[2] Yelan";
 textTitleHero[2] = "[3] Xiao";
 
@@ -65,9 +65,12 @@ textTitleHero[4] = "[2] Prototype Rancour";
 textTitleHero[5] = "[3] Royal Longsword";
 
 var textDescHero = new Array();
-textDescHero[0] = "Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang."
-textDescHero[1] = "A mysterious person who claims to work for the Ministry of Civil Affairs, but is a \"non-entity\" on the Ministry of Civil Affairs' list.Elusive, enigmatic, erratic - all of these are Yelan's hallmarks."
-textDescHero[2] = "One of the mighty and illuminated adepti guarding Liyue, also heralded as the \"Vigilant Yaksha. \"Despite his youthful appearance, tales of his exploits have been documented for millennia. He is fond of Wangshu Inn's Almond Tofu."
+textDescHero[0] =
+	"Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang.";
+textDescHero[1] =
+	"A mysterious person who claims to work for the Ministry of Civil Affairs, but is a \"non-entity\" on the Ministry of Civil Affairs' list.Elusive, enigmatic, erratic - all of these are Yelan's hallmarks.";
+textDescHero[2] =
+	'One of the mighty and illuminated adepti guarding Liyue, also heralded as the "Vigilant Yaksha. "Despite his youthful appearance, tales of his exploits have been documented for millennia. He is fond of Wangshu Inn\'s Almond Tofu.';
 
 textDescHero[3] =
 	"The profoundest of the profound is the Musou no Hitotachi. A sword art without parallel in all the world.";
@@ -77,87 +80,114 @@ textDescHero[5] =
 	"An old longsword that belonged to the erstwhile rulers of Mondstadt. Exquisitely crafted, the carvings and embellishments testify to the stature of its owner.";
 
 var starHero = new Array();
-starHero[0] = 5
-starHero[1] = 4
-starHero[2] = 5
+starHero[0] = 5;
+starHero[1] = 4;
+starHero[2] = 5;
 
-starHero[3] = 5
+starHero[3] = 5;
 starHero[4] = 4;
 starHero[5] = 4;
 
-let isHeroCurrent = true
+let isHeroCurrent = true;
 let iImage = document.getElementById("ilustration-image");
 let iTitle = document.getElementById("ilustration-ttl");
 let iDesc = document.getElementById("ilustration-desc-full");
 let iStar = document.getElementById("ilustration-star");
 let undrln = document.getElementById("undrln");
-iImage.style.transition = ".5s"
+iImage.style.transition = ".5s";
 iTitle.style.transition = ".5s";
 iDesc.style.transition = ".5s";
 iStar.style.transition = ".5s";
 undrln.style.transition = ".5s";
 
-async function changeImage(imgToChange, ttlToChange, descToChange, strToChange, imgs, ttls, descs, strs, isHero) {
-	imgToChange.style.opacity = "0"
+async function changeImage(
+	imgToChange,
+	ttlToChange,
+	descToChange,
+	strToChange,
+	imgs,
+	ttls,
+	descs,
+	strs,
+	isHero
+) {
+	imgToChange.style.opacity = "0";
 	ttlToChange.style.opacity = "0";
 	descToChange.style.opacity = "0";
 	strToChange.style.opacity = "0";
-	undrln.style.opacity = "0"
-	
-  await delay(500)
-  
+	undrln.style.opacity = "0";
+
+	await delay(500);
+
 	imgToChange.style.background = imgs[x];
 	imgToChange.src = imgs[x];
 	ttlToChange.innerHTML = ttls[x];
 	descToChange.innerHTML = descs[x];
-	let tempStars = ""
-	for (let i = 0; i < strs[x]; i++)
-	{
-		tempStars += "<img src=\"Images/star_.svg\">";
-		}
+	let tempStars = "";
+	for (let i = 0; i < strs[x]; i++) {
+		tempStars += '<img src="Images/star_.svg">';
+	}
 	strToChange.innerHTML = tempStars;
-	
+
 	await delay(500);
-  
+
 	imgToChange.style.opacity = "1";
 	ttlToChange.style.opacity = "1";
 	descToChange.style.opacity = "1";
 	strToChange.style.opacity = "1";
 	undrln.style.opacity = "1";
-	if (isHeroCurrent)
-	{
+	if (isHeroCurrent) {
 		x++;
 		if (x >= 3) {
 			x = 0;
-		} 
-	}
-	else
-	{
+		}
+	} else {
 		x++;
 		if (x < 3 || x > 5) {
 			x = 3;
 		}
 	}
-	
-  
-	if (isHeroCurrent === isHero) { await delay(3000); }
-  changeImage(imgToChange, ttlToChange, descToChange, strToChange, imgs, ttls, descs, strs, isHeroCurrent)
+
+	if (isHeroCurrent === isHero) {
+		await delay(3000);
+	}
+	changeImage(
+		imgToChange,
+		ttlToChange,
+		descToChange,
+		strToChange,
+		imgs,
+		ttls,
+		descs,
+		strs,
+		isHeroCurrent
+	);
 }
 
-changeImage(iImage, iTitle, iDesc, iStar, imagesHero, textTitleHero, textDescHero, starHero, isHeroCurrent)
+changeImage(
+	iImage,
+	iTitle,
+	iDesc,
+	iStar,
+	imagesHero,
+	textTitleHero,
+	textDescHero,
+	starHero,
+	isHeroCurrent
+);
 
-let heroSelect = document.getElementById("hero-select")
-let weapSelect = document.getElementById("weap-select")
+let heroSelect = document.getElementById("hero-select");
+let weapSelect = document.getElementById("weap-select");
 
 heroSelect.addEventListener("mousedown", () => {
-	weapSelect.classList.remove("ttl-active")
+	weapSelect.classList.remove("ttl-active");
 	heroSelect.classList.add("ttl-active");
 	isHeroCurrent = true;
-x = 0;
-})
+	x = 0;
+});
 weapSelect.addEventListener("mousedown", () => {
 	heroSelect.classList.remove("ttl-active");
-	weapSelect.classList.add("ttl-active")
-	isHeroCurrent = false
-	x=3
+	weapSelect.classList.add("ttl-active");
+	isHeroCurrent = false;
+	x = 3;
 });

@@ -5,13 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-    height: 100vh;
-    /* overflow-y: hidden; */
-    padding:0;
-    margin:0;
-    color: black;
     background-image: url('Images/JenshinBackGround.svg');
     background-size: cover;
+    
+    padding:0;
+    margin:0;
+    
+    height: 100vh;
 
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -19,6 +19,7 @@ body{
     font-weight: 400;
     font-size: 21px;
     text-decoration: none;
+    color: black;
 }
 
 .inside{
@@ -28,54 +29,51 @@ body{
 }
 .imageBG{
     background-image: url('Images/JenshinBackGround.svg');
-    width: 50vw;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    /* background-position: c; */
+
+    width: 50vw;
+    height: 100vh;
 }
 
 .register-Area{
-    /* overflow-y: scroll; */
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
-    width: 50vw;
-    height: calc(95vh - 100px);
-    display: flex;
+
     padding: 100px 0 5vh 0;
+    
+    display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 50vw;
+    height: calc(95vh - 100px);
 }
 
 .logo{
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    margin: 0 auto 2% auto;
+
+    height: 6vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
-/* background: url('Images/logozv.svg'); */
-    border-radius: 10px;
-    height: 6vh;
-
     width: fit-content;
-    margin: 0 auto 2% auto;
-    
-    background-repeat: no-repeat;
-    background-size: contain;
     display: block;
-    /* margin-left: 23.5vw; */
 }
 .agreement{
-    /* border:3px solid #ddd; */
     margin: 3% auto -3% auto;
+
     display: flex;
     flex-direction: row;
-    /* width: fit-content; */
+    
     font-family: 'HYWenHei';
     font-size: 15px;
     font-style: normal;
     color: #FFFFFF;
-    /* margin: 0 auto 0 auto; */
 }
 .agreement > label{
     margin: auto 0 auto 10px;
@@ -83,95 +81,91 @@ body{
 }
 
 .agreement input{
-    display: inline-block;
-    margin: 0 0 0 0 ;
-    height: 25px;
     cursor: pointer;
+
+    margin: 0 0 0 0;
+
+    display: inline-block;
+    height: 25px;
     width: 25px;
 }
 
 .register{
-font-family: 'HYWenHei';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 49px;
-text-align: center;
-color: #FFFFFF;
-margin-bottom: 2.5%;
-margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+
+    font-family: 'HYWenHei';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .age-area{
-    
-    /* border: solid black; */
-    
+    margin:  1% auto 0 auto;
+
+    width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin:  1% auto 0 auto;
-    
-    width: 60%;
+    justify-content: space-between; 
 }
-
-.age-area > input{
-    /* width: 100%; */
-}
-
 .up-down-buttons{
-    padding: auto;
-    display: flex;
-    
-    margin: 0;
     position: relative;
+    padding: auto;
+    margin: auto;
+    margin-left: 2%;
+    margin-top: 2%;
+
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid green; */
-    /* width: fit-content; */
-    margin: auto;
-    height: 7vh;
-    margin-left: 2%;
-    margin-top: 2%;
-    
+    height: 7vh;    
 }
 .up-down-buttons button{
     cursor: pointer;
+
     background-color: transparent;
+
     border: none;
 }
-.up-down-buttons img:hover{filter: drop-shadow(0px 0px 10px white);
+.up-down-buttons img:hover{
+    filter: drop-shadow(0px 0px 10px white);
 }
 .age-area button img{
     bottom:0;
     height: 100%;
-    /* width: fit-content; */
-    /* border: solid yellow; */
-    /* padding-top: 5px; */
     width: 100%;
-    transition: .5s;filter: drop-shadow(0px 0px 10px black);
+
+    filter: drop-shadow(0px 0px 10px black);
+    transition: .5s;
 }
 
 
 
 input{
+    background-color:#D9D9D9; 
+    outline: none; 
+    border: 3px solid rgba(255,255,255,0);
+
     position: relative;
-    width: 60%;
-    height: 7vh;
-    background-color:#D9D9D9;  
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-weight: bold;
     margin:  2% auto 0 auto;
     padding: 0 3% 0 3%;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    width: 60%;
+    height: 7vh;
+    
+    font-weight: bold;
     font-size: 20px;
+
     transition: .5s;
-    outline: none;
-    border: 3px solid rgba(255,255,255,0);
-    -webkit-transition: 0.5s;
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus{
-  border: 3px solid #555;
+    border: 3px solid #555;
 }
 input::placeholder{
     font-family: 'HYWenHei';
@@ -181,23 +175,26 @@ input::placeholder{
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .signup{
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: #599ABE;
+
     font-family: 'HYWenHei';
     font-style: normal;
     font-size: 25px;
     margin:5% auto 3% auto;
     color: #FFFFFF;
-    border: none;
+
     width: 40%;
     height: 10vh;
-    background: #599ABE;
-    border-radius: 20px;
+
     transition: .5s;
-    cursor: pointer;
 }
 
 .signup:hover{
@@ -214,10 +211,11 @@ input::-webkit-inner-spin-button {
     
 }
 #CheckboxWarning{
+    padding: 5px 0 5px 0;
+    
     font-family: 'HYWenHei';
     font-style: bold;
     font-size: 15px;
-    padding: 5px 0 5px 0;
     color: red;
 }
 @media only screen and (max-width: 1278px){
