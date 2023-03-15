@@ -136,12 +136,12 @@
     margin-top: 5%;
 }
 .up1, .up2, .up3,.low1,.low2,.SS1,.SS2,.SS3,.SS4,.SS5,.SS6{
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     background: url('Images/vid1.svg');
-    background-repeat: no-repeat;
     
     border: 5px solid #FFFFFF;
-
+    
     width: 20vw;
     height: 24vh;
 }
@@ -271,7 +271,7 @@
 }
 
 .f1img,.f3img,.f5img{
-    background-size: cover;
+    background-size: cover !important;
     background: url('Images/SS4.svg');
     background-repeat: no-repeat;
     
@@ -291,7 +291,7 @@
     background-size: 100%;
 }
 .f2img,.f4img{
-    background-size: cover;
+    background-size: cover !important;
     background: url('Images/feat2.svg');
     background-repeat: no-repeat;
 
@@ -426,7 +426,11 @@
 .buttonpress:hover{
     background-color: #D3B032;
 }
-
+@media only screen and (max-width: 2600px){
+    .megatron2{
+        height: 6300px;
+    }
+}
 @media only screen and (max-height: 1500px){
     .platform-box{
         height: 100px;
