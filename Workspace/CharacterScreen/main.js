@@ -8,11 +8,25 @@ let abts = document.getElementById("abts");
 function resetPos() {
 	selector.style.marginLeft = "30%";
 	selector.style.width = "24%";
+	activateClass();
+}
+function resetClass() {
+	if (char.classList.contains("is-activated") == true) {
+		char.classList.remove("is-activated");
+		char.classList.add("isnt-activated");
+	}
+}
+function activateClass() {
+	if (char.classList.contains("isnt-activated") == true) {
+		char.classList.add("is-activated");
+		char.classList.remove("isnt-activated");
+	}
 }
 resetPos()
 home.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "8.5%";
 	selector.style.width = "12%";
+  resetClass();
 });
 home.addEventListener("mouseleave", resetPos);
 
@@ -22,12 +36,14 @@ char.addEventListener("mouseleave", resetPos);
 maps.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "64.3%";
 	selector.style.width = "10%";
+  resetClass();
 });
 maps.addEventListener("mouseleave", resetPos);
 
 abts.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "84%";
 	selector.style.width = "15%";
+  resetClass();
 });
 abts.addEventListener("mouseleave", resetPos);
 
