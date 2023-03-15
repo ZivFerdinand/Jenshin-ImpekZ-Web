@@ -182,12 +182,7 @@
   height: 50px;
   width: 50px;
 }
-.dimmer{
-  background-color: black;
 
-  position: fixed;
-  border: solid yellow;
-}
 .bg-ovly{
   background-color: rgba(0,0,0,0.5);
 

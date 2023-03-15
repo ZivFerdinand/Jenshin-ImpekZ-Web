@@ -11,6 +11,20 @@ const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 function resetPos() {
 	selector.style.marginLeft = "8.5%";
 	selector.style.width = "12%";
+
+	activateClass();
+}
+function resetClass() {
+	if (home.classList.contains("is-activated") == true) {
+		home.classList.remove("is-activated");
+		home.classList.add("isnt-activated");
+	}
+}
+function activateClass() {
+	if (home.classList.contains("isnt-activated") == true) {
+		home.classList.add("is-activated");
+		home.classList.remove("isnt-activated");
+	}
 }
 resetPos();
 home.addEventListener("mouseenter", resetPos);
@@ -19,18 +33,21 @@ home.addEventListener("mouseleave", resetPos);
 char.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "30%";
 	selector.style.width = "24%";
+  resetClass();
 });
 char.addEventListener("mouseleave", resetPos);
 
 maps.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "64.3%";
 	selector.style.width = "10%";
+  resetClass();
 });
 maps.addEventListener("mouseleave", resetPos);
 
 abts.addEventListener("mouseenter", () => {
 	selector.style.marginLeft = "84%";
 	selector.style.width = "15%";
+  resetClass();
 });
 abts.addEventListener("mouseleave", resetPos);
 

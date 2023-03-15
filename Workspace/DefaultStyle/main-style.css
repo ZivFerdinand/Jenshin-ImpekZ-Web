@@ -18,10 +18,7 @@
     -webkit-backdrop-filter: blur(25px);
 }
 
-.is-activated{
-   color: white; 
-   text-shadow: 0px 0px 20px #D7B332;
-}
+
 body, html{
     min-width: 320px;
     overscroll-behavior-y: none;
@@ -160,7 +157,6 @@ nav > ul{
     font-size: 21px;
     align-items: center;
     /* font-weight: bold; */
-    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     text-transform: uppercase;
     line-height: 40px;
@@ -178,6 +174,13 @@ nav > ul{
 .menu > a:hover, .nav-right-area > .login-btn:hover{
     color: #FFFFFF;
     text-shadow: 0px 0px 20px #D7B232;
+}
+.isnt-activated{
+    color: rgba(255, 255, 255, 0.5);
+}
+.is-activated{
+   color: white; 
+   text-shadow: 0px 0px 20px #D7B332;
 }
 nav > .nav-right-area > .down-btn{
     background-color: #D3B032;

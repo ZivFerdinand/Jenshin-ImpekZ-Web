@@ -490,13 +490,14 @@
   background-color: #D7B332;
 
   position: absolute;
-  margin-left: calc(50vw - 30vw);
+  margin-left: calc(50vw - (60vw/2));
 
   height: 20px;
   width: 60vw;
 }
 .close-btn{
   cursor: pointer;
+  z-index: 2100;
 
   background-image: url('Images/xClose.svg');
   background-size: contain;
@@ -517,7 +518,7 @@
     backdrop-filter: drop-shadow(0 0 25px black);
 
     z-index: 2000;
-    cursor: pointer;
+    /* cursor: pointer; */
    
     width: 100vw;
     height: 100%;
@@ -533,7 +534,7 @@
     flex-direction: row;
     display: none;
     transition: .5s;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 .overlay .mybg,.eebg,.asbg,.mrbg{
