@@ -36,6 +36,7 @@
     opacity: 0.85; 
 
     height: 100vh;
+    min-height: 900px;
     width: 100vw;
 
     animation: MoveLeftRightBG 60s ease-in-out infinite;
@@ -79,6 +80,7 @@
     
     max-width: calc(100vw);
     height: calc(60vh);
+    min-height: 500px;
     
 }
 .text-hero-desc{
@@ -116,6 +118,7 @@
                                     rgba(64,64,64,0) 70%, 
                                     rgb(0, 0, 0, 1) 100%), 
                         url('Images/3.svg');
+    min-height: 1000px;
     
 }
 .ctr3:hover .image3{
@@ -126,6 +129,7 @@
                                     rgba(64,64,64,0) 70%, 
                                     rgb(0, 0, 0, 1) 100%), 
                         url('Images/1.svg');
+    
 }
 .ctr4:hover .image4{
     background-image: url('Images/1.svg');
@@ -397,6 +401,7 @@
     z-index: 80;
 
     min-width: 20vw;
+    /* min-height:3000px; */
 
     transition: all 0.5s;
 }
@@ -498,10 +503,12 @@
 .close-btn{
   cursor: pointer;
   z-index: 2100;
+  border-radius: 20px;
 
   background-image: url('Images/xClose.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
 
   position: absolute;
   right: 25px;
@@ -509,6 +516,10 @@
   
   height: 50px;
   width: 50px;
+  transition: .3s;
+}
+.close-btn:hover{
+    background-color: #D7B232;
 }
 .overlay {
     background-repeat: no-repeat;
@@ -770,5 +781,9 @@
   .bg, .bg2, .bg3, .bg4{
         background-size: 500%;
     }
+}
+@media only screen and (max-width: 600px)
+{
+    
 }
 
