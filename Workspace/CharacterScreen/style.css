@@ -503,10 +503,12 @@
 .close-btn{
   cursor: pointer;
   z-index: 2100;
+  border-radius: 20px;
 
   background-image: url('Images/xClose.svg');
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: transparent;
 
   position: absolute;
   right: 25px;
@@ -514,6 +516,10 @@
   
   height: 50px;
   width: 50px;
+  transition: .3s;
+}
+.close-btn:hover{
+    background-color: #D7B232;
 }
 .overlay {
     background-repeat: no-repeat;
