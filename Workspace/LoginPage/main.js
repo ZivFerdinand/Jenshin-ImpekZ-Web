@@ -127,8 +127,6 @@ buttonSubmit.addEventListener("click", async (event) => {
 		buttonSubmit.innerHTML = "Success";
 		buttonSubmit.style.backgroundColor = "green";
         
-        userDatas.push(new User(username, password))
-        console.log(userDatas)
 		await delay(1000);
 		window.location.replace("../HomeScreen/main.html");
 	} else {
