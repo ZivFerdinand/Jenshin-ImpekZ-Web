@@ -2,7 +2,7 @@
     background: linear-gradient(to top, 
                                 rgba(0, 0, 0, 1) 0%,
                                 rgba(64, 64, 64, 0) 3%), 
-                url('Images/Bg1.svg');
+                url('https://genshinhci.files.wordpress.com/2023/03/bg1.png');
     background-size: cover;
 
     width: 100vw;
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .genshinlogo{
-    background: url('Images/jenshinimpekz.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/jenshinimpekz.png');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -90,7 +90,7 @@
                                 rgba(64, 64, 64, 0) 10%,
                                 rgba(64, 64, 64, 0) 95%, 
                                 rgba(0, 0, 0, 1) 100%), 
-                url('Images/bg2.svg');
+                url('https://genshinhci.files.wordpress.com/2023/03/bg2.png');
     background-size: cover;
     width: 100vw;
     height: 4000px;
@@ -138,7 +138,7 @@
 .up1, .up2, .up3,.low1,.low2,.SS1,.SS2,.SS3,.SS4,.SS5,.SS6{
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    background: url('Images/vid1.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/SS4.png');
     
     border: 5px solid #FFFFFF;
     
@@ -165,40 +165,40 @@
     -webkit-filter: drop-shadow(0 0 15px black);
 }
 .up1{
-    background: url('Images/vid1.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss4.png');
 }
 .up2{
-    background: url('Images/vid2.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/vid2.png');
 }
 .up3{
-    background: url('Images/vid3.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/vid3.png');
 }
 .low1{
-    background: url('Images/vid4.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/vid4.png');
 }
 .low2{
-    background: url('Images/vid5.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/vid5.png');
 }
 .SS1, .SS2, .SS3, .SS4, .SS5, .SS6{
     transition: .5s;
 }
 .SS1{
-    background: url('Images/ss1.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss1.png');
 }
 .SS2{
-    background: url('Images/ss2.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss2.png');
 }
 .SS3{
-    background: url('Images/ss3.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss3.png');
 }
 .SS4{
-    background: url('Images/ss4.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss4.png');
 }
 .SS5{
-    background: url('Images/ss5.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss5.png');
 }
 .SS6{
-    background: url('Images/ss6.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss6.png');
 }
 .SS1:hover, .SS2:hover, .SS3:hover, .SS4:hover, .SS5:hover, .SS6:hover{
     filter: drop-shadow(0 0 20px black);
@@ -272,7 +272,7 @@
 
 .f1img,.f3img,.f5img{
     background-size: cover !important;
-    background: url('Images/SS4.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/ss4.png');
     background-repeat: no-repeat;
     
     border: 5px solid rgb(255, 255, 255);
@@ -284,15 +284,15 @@
     height: 24vh;
 }
 .f3img{
-    background: url('Images/feat3.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/feat3.png');
 }
 .f5img{
-    background: url('Images/feat5.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/feat5.png');
     background-size: 100%;
 }
 .f2img,.f4img{
     background-size: cover !important;
-    background: url('Images/feat2.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/feat2.png');
     background-repeat: no-repeat;
 
     align-items: center;
@@ -305,7 +305,7 @@
     height: 24vh;
 }
 .f4img{
-    background: url('Images/feat4.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/feat4.png');
 }
 .f1desc,.f2desc{
     display: inline-block;
