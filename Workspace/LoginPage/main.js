@@ -128,7 +128,7 @@ buttonSubmit.addEventListener("click", async (event) => {
 		buttonSubmit.style.backgroundColor = "green";
         
 		await delay(1000);
-		window.location.replace("../HomeScreen/main.html");
+		window.location.replace("../HomeScreen/index.html");
 	} else {
 		buttonSubmit.innerHTML = "Sign Up";
 	}
