@@ -68,7 +68,6 @@ decrBtn.addEventListener("click", () => {
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 buttonSubmit.addEventListener("click", async (event) => {
-	// console.log('asu')
 	event.preventDefault();
 	let errorStats = true;
 	const name = inputName.value;
@@ -81,7 +80,6 @@ buttonSubmit.addEventListener("click", async (event) => {
 	const username = inputUsername.value;
 	if (username == "") {
 		errorStats = false;
-		//divErrorForName.innerHTML = "Username cannot be empty";
 		inputUsername.value = "";
 		inputUsername.placeholder = "Username Cannot be Empty";
 		inputUsername.classList.add("on-error-usrnm");

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-    background-image: url('Images/JenshinBackGround.svg');
+    background-image: url('https://genshinhci.files.wordpress.com/2023/03/jenshinbackground.png');
     background-size: cover;
     
     padding:0;
@@ -28,13 +28,16 @@ body{
     justify-content: center;
 }
 .imageBG{
-    background-image: url('Images/JenshinBackGround.svg');
+    background-image: url('https://genshinhci.files.wordpress.com/2023/03/jenshinbackground.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover !important;
     background-position: bottom;
-
+    
+    padding: 100px 0 5vh 0;
     width: 50vw;
-    height: 100vh;
+    /* border: solid green; */
+    height: calc(95vh - 100px);
+    min-height: 700px;
 }
 
 .register-Area{
@@ -49,6 +52,7 @@ body{
     justify-content: center;
     width: 50vw;
     height: calc(95vh - 100px);
+    min-height: 700px;
 }
 
 .logo{
