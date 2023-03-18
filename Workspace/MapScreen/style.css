@@ -313,6 +313,7 @@
   
   width: 50vw;
   height: 20vh;
+  min-height: 500px;
 }
 @keyframes MoveLeftRightBG {
     0%, 100% {
