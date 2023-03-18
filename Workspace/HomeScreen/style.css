@@ -18,19 +18,19 @@
 }
 .area-1{
     
-    background: url('../CharacterScreen/Images/myramid-pic.png');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/myramid-pic.png');
 }
 .area-2{
     
-    background: url('../CharacterScreen/Images/eexorni.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/eexorni.png');
 }
 .area-3{
     
-    background: url('../CharacterScreen/Images/asakuroni.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/asakuroni.png');
 }
 .area-4{
     
-    background: url('../CharacterScreen/Images/miramarni.svg');
+    background: url('https://genshinhci.files.wordpress.com/2023/03/miramarni.png');
 }
 .maps-area{
     background-position: center;
@@ -153,7 +153,7 @@
 .main-megatron {
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("Images/main-megatron.jpg");
+    background-image: url("https://genshinhci.files.wordpress.com/2023/03/main-megatron.jpg");
     background-size: cover;
 
     position: relative;
@@ -178,7 +178,7 @@
     background: linear-gradient(to top, 
                                 rgba(64,64,64,0) 70%, 
                                 rgb(0, 0, 0, 1) 100%), 
-                url('Images/update_bg.svg');
+                url('https://genshinhci.files.wordpress.com/2023/03/update_bg.png');
     background-size: cover;
 
     color: white;

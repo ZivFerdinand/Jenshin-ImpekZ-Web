@@ -53,9 +53,9 @@ body, html{
     margin: 75px calc(50vw - 150px) 0 calc(50vw - 150px);
     z-index: 2000;
     justify-content: center;
-    
 }
 .other-nav a{
+    color: white;   
     transition: .5s;
     font-family: 'HyWenHei';
     text-align: center;
@@ -64,8 +64,11 @@ body, html{
     font-size: 21px;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
     margin: 5px 0 5px 0;
+}
+.other-nav-activated{
+    color: #D7B232 !important;
+    text-shadow: 0 0 20px #D7B232;
 }
 nav{
     color: white;

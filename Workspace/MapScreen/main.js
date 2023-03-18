@@ -186,7 +186,7 @@ async function changeImage(x, imgToChange, ttlToChange, descToChange, imgs, ttls
       x = 0;
   } 
   
-  await delay(5000)
+  await delay(3000)
   changeImage(x, imgToChange, ttlToChange, descToChange, imgs, ttls, descs)
 }
 

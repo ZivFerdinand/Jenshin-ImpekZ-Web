@@ -64,13 +64,13 @@ mainBG.addEventListener("mousemove", (e) => {
 
 var imagesHero = new Array();
 let x = 0;
-imagesHero[0] = "Images/ghosties.svg";
-imagesHero[1] = "Images/ghosties_2.svg";
-imagesHero[2] = "Images/ghosties_3.svg";
+imagesHero[0] = "https://genshinhci.files.wordpress.com/2023/03/ghosties.png";
+imagesHero[1] = "https://genshinhci.files.wordpress.com/2023/03/ghosties_2.png";
+imagesHero[2] = "https://genshinhci.files.wordpress.com/2023/03/ghosties_3.png";
 
-imagesHero[3] = "Images/weap.svg";
-imagesHero[4] = "Images/weap_2.svg";
-imagesHero[5] = "Images/weap_3.svg";
+imagesHero[3] = "https://genshinhci.files.wordpress.com/2023/03/weap.png";
+imagesHero[4] = "https://genshinhci.files.wordpress.com/2023/03/weap_2.png";
+imagesHero[5] = "https://genshinhci.files.wordpress.com/2023/03/weap_3.png";
 
 var textTitleHero = new Array();
 textTitleHero[0] = "[1] Hu Tao";
@@ -142,7 +142,8 @@ async function changeImage(
 	descToChange.innerHTML = descs[x];
 	let tempStars = "";
 	for (let i = 0; i < strs[x]; i++) {
-		tempStars += '<img src="Images/star_.svg">';
+		tempStars +=
+			'<img src="https://genshinhci.files.wordpress.com/2023/03/star_.png">';
 	}
 	strToChange.innerHTML = tempStars;
 
