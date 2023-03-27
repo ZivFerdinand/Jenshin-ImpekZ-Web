@@ -18,6 +18,7 @@ function resetClass() {
 	if (home.classList.contains("is-activated") == true) {
 		home.classList.remove("is-activated");
 		home.classList.add("isnt-activated");
+		
 	}
 }
 function activateClass() {
