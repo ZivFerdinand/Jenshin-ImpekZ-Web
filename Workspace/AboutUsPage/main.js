@@ -7,6 +7,8 @@ let abts = document.getElementById("abts");
 function resetPos() {
 	selector.style.marginLeft = "84%";
 	selector.style.width = "15%";
+	
+	activateClass();
 }
 function resetClass() {
 	if (abts.classList.contains("is-activated") == true) {
